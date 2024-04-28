@@ -17,4 +17,25 @@ body {
   height: 104px;
   padding: 32px 80px 32px 80px;
   width: 100%;
+  background-color: rgb(234, 237, 241);
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+.header-nav li {
+  list-style-type: none;
+}
+.header-nav a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(56, 65, 80);
+  text-decoration: none;
+}
+
+.header-list {
+  display: flex;
+  gap: 2rem;
 }/*# sourceMappingURL=style.css.map */
