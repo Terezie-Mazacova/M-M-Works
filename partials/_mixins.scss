@@ -48,6 +48,10 @@
     padding: $padding;
 }
 
+@mixin margin-text($margin) {
+    margin: $margin;
+}
+
 @mixin weight($font-weight) {
     font-weight: $font-weight;
 }
