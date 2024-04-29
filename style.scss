@@ -28,8 +28,8 @@ body {
 .header-nav {
     ul {
         display: flex;
-        gap: $gap;
         cursor: pointer;
+        @include gap-text(2rem)
     }
         li{
             list-style-type: none;
@@ -43,5 +43,15 @@ body {
 
 .header-list {
     display: flex;
-    gap: $gap;
+    @include gap-text(0.5rem);
+}
+
+.header-btn {
+    button {
+        @include contact-btn;
+    }
+        p {
+            @include text-medium;
+            @include weight(500);
+        }
 }
