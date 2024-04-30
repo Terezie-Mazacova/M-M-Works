@@ -1,6 +1,14 @@
 /* Slider s logy na uvodni strance webu */
 document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide' );
+    var splide = new Splide( '.splide', {
+        perPage: 6,
+        gap: '10px',
+        pagination: false,
+        type: 'loop',
+        autoplay: true,
+        interval: 1000,
+        speed: 900000
+    });
     splide.mount();
 } );
 

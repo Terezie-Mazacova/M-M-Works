@@ -120,3 +120,15 @@ body {
     }
 }
 
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+.main-cards {
+    display: flex;
+    justify-content: center;
+    @include gap-text(1rem);
+    @include margin-text(3rem);
+}
+
