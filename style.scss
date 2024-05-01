@@ -76,11 +76,11 @@ body {
     
     .caret {
         width: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 6px solid black;
+        border-left: 0.313rem solid transparent;
+        border-right: 0.313rem solid transparent;
+        border-top: 0.25rem solid black;
         transition: 0.3s;
-        margin-left: 5px;
+        margin-left: 0.313rem;
     }
     
     .caret-rotate {
@@ -120,8 +120,9 @@ body {
     }
 }
 
+/*Main Content*/
 .main-container {
-    max-width: 1440px;
+    max-width: 90rem;
     margin: 0 auto;
 
 }
@@ -132,3 +133,48 @@ body {
     @include margin-text(3rem);
 }
 
+/*Footer*/
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: lightgrey;
+
+    .footer-content {
+        display: flex;
+        @include gap-text(4rem);
+        width: 100%;
+        justify-content: space-around;
+
+        .footer-first-part {
+
+            .footer-contact {
+                @include text-medium;
+                color: $brand-color;
+                @include weight(500);
+            }
+
+            h2 {
+                @include h2;
+                color: $text-inverse;
+                @include weight(600);
+            }
+
+            p{
+                max-width: 35.5rem;
+                @include text-medium;
+                @include weight(400);
+                color: $text-inverse;
+            }
+        }
+    }
+}
+
+
+
+.footer-form {
+    width: 90%;
+    max-width: 600px;
+}

@@ -88,10 +88,10 @@
     <!--Footer -->
     <footer>
         <div class="footer-container">
-            <div>
-                <div>
+            <div class="footer-content">
+                <div class="footer-first-part">
                     <div>
-                        <p>Kontakt</p>
+                        <p class="footer-contact">Kontakt</p>
                         <h2>Chceš se k nám přidat?</h2>
                         <p>Vždy radi obohatíme náš tým o skúsených i menej skúsených ľudí, s chuťou zdokonaľovať sa a obohatiť našu spoločnosť na rôznych postoch. V prípade záujmu nás kontaktujte.</p>
                     </div>
@@ -107,15 +107,26 @@
                 </div>
 
                 <div>
-                    <div>
-                        <form>
+                    <form class="footer-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">First name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Last name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="8"></textarea>
+                            <label for="message">Text</label>
+                        </div>
+                        <button type="submit">Odeslat</button>
+                    </form>
 
-                        </form>
-                    </div>
-
-                    <div>
-                        <button>Odeslat</button>
-                    </div>
                 </div>
             </div>
 
