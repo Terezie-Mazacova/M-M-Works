@@ -130,43 +130,197 @@ body {
     display: flex;
     justify-content: center;
     @include gap-text(1rem);
-    @include margin-text(3rem);
+    @include margin-text(2.5rem 0 0 0);
 }
 
 /*Footer*/
+.footer-bg {
+    background-color: $dark-bg;
+    z-index: -1;
+    width: 100%;
+    height: 60.625rem;
+    position: absolute;
+}
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 90rem;
     margin: 0 auto;
-    background-color: lightgrey;
+    
+    @include padding-text(6rem 7rem 2.5rem 7rem);
+    @include gap-text(4rem);
 
     .footer-content {
         display: flex;
         @include gap-text(4rem);
         width: 100%;
-        justify-content: space-around;
+        height: 29.375rem;
+        justify-content: space-between;
+
 
         .footer-first-part {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
 
-            .footer-contact {
-                @include text-medium;
-                color: $brand-color;
+            .first-part-text {
+                display: flex;
+                flex-direction: column;
+                @include gap-text(1rem);
+
+                .footer-contact {
+                    @include text-medium;
+                    color: $brand-color;
+                    @include weight(500);
+                }
+    
+                h2 {
+                    @include h2;
+                    color: $text-inverse;
+                    @include weight(600);
+                }
+    
+                p  {
+                    max-width: 35.5rem;
+                    @include text-medium;
+                    @include weight(400);
+                    color: $text-inverse;
+                }
+            }
+            
+            .footer-info {
+                display: flex;
+                flex-direction: column;
+                @include gap-text(1.313rem);
+                
+                .footer-items {
+                    display: flex;
+                    @include gap-text(0.5rem);
+                    align-items: center;
+
+                    p {
+                        color: $text-inverse;
+                        @include text-large;
+                    }
+
+                    .bi-telephone {
+                        color: $text-inverse;
+                    }
+
+                    .bi-envelope {
+                        color: $text-inverse;
+                    }
+                }
+            }
+            
+        }
+    }
+    .footer-second-part {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        .footer-item-contact {
+            display: flex;
+            flex-direction: column;
+            @include gap-text(1rem);
+        }
+    
+        .footer-contact-list {
+            display: flex;
+            flex-direction: column;
+            @include gap-text(0.25rem);
+    
+            p {
+                color: $text-quad;
+                @include text-small;
+                cursor: pointer;
+            }
+        }
+    
+        .footer-first-list {
+            display: flex;
+            flex-direction: column;
+            @include gap-text(0.75rem);
+    
+            h4 {
+                @include text-large;
+                color: $text-inverse;
                 @include weight(500);
             }
-
-            h2 {
-                @include h2;
-                color: $text-inverse;
-                @include weight(600);
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                @include gap-text(0.25rem);
+                list-style-type: none;
+                
+                a {
+                    text-decoration: none;
+                    @include text-small;
+                    color: $text-quad;
+                }
             }
-
-            p{
-                max-width: 35.5rem;
-                @include text-medium;
-                @include weight(400);
+        }
+    
+        .footer-second-list {
+            display: flex;
+            flex-direction: column;
+            @include gap-text(0.75rem);
+    
+            h4 {
+                @include text-large;
                 color: $text-inverse;
+                @include weight(500);
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                @include gap-text(0.25rem);
+                list-style-type: none;
+                
+                a {
+                    text-decoration: none;
+                    @include text-small;
+                    color: $text-quad;
+                }
+            }
+        }
+    }
+    
+    .footer-last-part {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
+        .footer-last-info {
+            display: flex;
+            justify-content: space-between;
+            @include margin-text(1.5rem 0 0 0);
+    
+            .footer-frame {
+                p{
+                    @include text-small;
+                    @include weight(400);
+                    color: $text-quad;
+                }
+            }
+    
+            .footer-last-frame {
+                display: flex;
+                align-items: center;
+                
+                p {
+                    @include text-small;
+                    @include weight(400);
+                    color: $text-tertiary;
+                }
+    
+                a {
+                    height: 14px;
+                    @include margin-text(0.125rem 0 0 0.25rem);
+                }
             }
         }
     }
@@ -174,7 +328,45 @@ body {
 
 
 
+
+
 .footer-form {
-    width: 90%;
+    width: 568px;
     max-width: 600px;
+}
+
+.input-group {
+    margin-bottom: 60px;
+    position: relative;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
