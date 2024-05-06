@@ -118,6 +118,14 @@ body {
   max-width: 90rem;
   margin: 0 auto;
 }
+.main-container .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.main-container .main-splide-content {
+  margin-bottom: 96px;
+}
 
 .main-cards {
   display: flex;
@@ -299,43 +307,65 @@ body {
 }
 
 .footer-form {
+  display: flex;
+  flex-direction: column;
   width: 568px;
   max-width: 600px;
-}
-
-.input-group {
-  margin-bottom: 60px;
   position: relative;
+  padding: 32px 0 32px 32px;
+  gap: 32px;
 }
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #fff;
-  background-color: transparent;
-  font-size: 15px;
-}
-
-label {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 25px;
-  color: #fff;
-}
-
-button {
-  padding: 10px 0;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  width: 100%;
-  cursor: pointer;
-}
-
-.row {
+.footer-form .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+.footer-form .input-group {
+  position: relative;
+  padding: 0.5rem 0 0 0;
+}
+.footer-form .input-group input, .footer-form .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(55, 65, 81);
+  font-size: 15px;
+  border: none;
+  border-radius: 0.25rem;
+  color: rgb(255, 255, 255);
+}
+.footer-form .input-group ::-moz-placeholder {
+  color: rgb(107, 114, 128);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+.footer-form .input-group ::placeholder {
+  color: rgb(107, 114, 128);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+.footer-form .input-group label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  padding: 0.5rem 0 0 0;
+}
+.footer-form button {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  background-color: rgb(249, 115, 22);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

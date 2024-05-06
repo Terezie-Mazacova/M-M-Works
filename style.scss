@@ -125,12 +125,23 @@ body {
     max-width: 90rem;
     margin: 0 auto;
 
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .main-splide-content {
+        margin-bottom: 96px;
+    }
+
 }
 .main-cards {
     display: flex;
     justify-content: center;
     @include gap-text(1rem);
     @include margin-text(2.5rem 0 0 0);
+
 }
 
 /*Footer*/
@@ -289,7 +300,7 @@ body {
             }
         }
     }
-    
+
     .footer-last-part {
         width: 100%;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -331,42 +342,74 @@ body {
 
 
 .footer-form {
+    display: flex;
+    flex-direction: column;
     width: 568px;
     max-width: 600px;
-}
-
-.input-group {
-    margin-bottom: 60px;
     position: relative;
-}
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    font-size: 15px;
+    @include padding-text(32px 0 32px 32px);
+    @include gap-text(32px);
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .input-group {
+        position: relative;
+        @include padding-text(0.5rem 0 0 0);
+        
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: $color-ondark;
+            font-size: 15px;
+            border: none;
+            @include radius(0.25rem);
+            color: $text-inverse;
+        }
+
+        
+        ::placeholder {
+            color: $text-tertiary;
+            @include text-small;
+            @include weight(400);
+        }
+
+
+
+        label {
+            height: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 25px;
+            color: $text-inverse;
+            @include text-small;
+            @include weight(500);
+            @include padding-text(0.5rem 0 0 0);
+        }
+    }
+
+    button {
+        color: #fff;
+        @include text-medium;
+        @include weight(500);
+        background-color: $brand-color;
+        border: none;
+        @include radius(0.25rem);
+        padding: 1rem 2rem 1rem 2rem;
+        width: 100%;
+        cursor: pointer;
+    }
 }
 
-label {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 25px;
-    color: #fff;
-}
 
-button {
-    padding: 10px 0;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    width: 100%;
-    cursor: pointer;
-}
 
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
+
+
+
+
+
