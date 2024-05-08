@@ -10,37 +10,42 @@ body {
   font-family: "Golos Text", sans-serif;
 }
 
-.header-wrapper {
+/* HEADER */
+.header-container {
+  background-color: rgb(234, 237, 241);
+  display: flex;
+  justify-content: center;
+}
+.header-container .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 104px;
-  padding: 32px 80px 32px 80px;
+  max-width: 90rem;
+  margin: 0 48px;
+  border-bottom: 1px solid rgb(209, 213, 219);
+  padding: 32px 0;
   width: 100%;
-  background-color: rgb(234, 237, 241);
 }
-
-.header-nav ul {
+.header-container .header-wrapper .header-nav ul {
   display: flex;
   cursor: pointer;
   gap: 2rem;
 }
-.header-nav li {
+.header-container .header-wrapper .header-nav li {
   list-style-type: none;
 }
-.header-nav a {
+.header-container .header-wrapper .header-nav a {
   font-size: 1rem;
   line-height: 1.5rem;
   color: rgb(56, 65, 80);
   text-decoration: none;
 }
-
-.header-list {
+.header-container .header-wrapper .header-list {
   display: flex;
   gap: 0.5rem;
 }
-
-.header-btn button {
+.header-container .header-wrapper .header-list .header-btn button {
   display: flex;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
@@ -51,16 +56,15 @@ body {
   border: 1px solid rgb(209, 213, 219);
   background-color: rgb(255, 255, 255);
 }
-.header-btn p {
+.header-container .header-wrapper .header-list .header-btn p {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
 }
-
-.dropdown {
+.header-container .header-wrapper .header-list .dropdown {
   position: relative;
 }
-.dropdown .select {
+.header-container .header-wrapper .header-list .dropdown .select {
   background: transparent;
   color: rgb(15, 19, 26);
   display: flex;
@@ -70,10 +74,10 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.dropdown .select:hover, .dropdown .select:active {
+.header-container .header-wrapper .header-list .dropdown .select:hover, .header-container .header-wrapper .header-list .dropdown .select:active {
   background-color: aqua;
 }
-.dropdown .caret {
+.header-container .header-wrapper .header-list .dropdown .caret {
   width: 0;
   border-left: 0.313rem solid transparent;
   border-right: 0.313rem solid transparent;
@@ -81,10 +85,10 @@ body {
   transition: 0.3s;
   margin-left: 0.313rem;
 }
-.dropdown .caret-rotate {
+.header-container .header-wrapper .header-list .dropdown .caret-rotate {
   transform: rotate(180deg);
 }
-.dropdown .menu {
+.header-container .header-wrapper .header-list .dropdown .menu {
   list-style-type: none;
   padding: 0.5rem;
   background: white;
@@ -100,56 +104,67 @@ body {
   transition: 0.2s;
   z-index: 1;
 }
-.dropdown .menu li {
+.header-container .header-wrapper .header-list .dropdown .menu li {
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 0.3rem;
 }
-.dropdown .active {
+.header-container .header-wrapper .header-list .dropdown .active {
   background: lightgrey;
 }
-.dropdown .menu-open {
+.header-container .header-wrapper .header-list .dropdown .menu-open {
   display: block;
   opacity: 1;
 }
 
 /*Main Content*/
 .main-container {
-  max-width: 90rem;
-  margin: 0 auto;
+  background-color: rgb(234, 237, 241);
 }
 .main-container .main-content {
   display: flex;
   flex-direction: column;
   gap: 64px;
+  max-width: 90rem;
+  margin: 0 auto;
 }
-.main-container .main-splide-content {
-  margin-bottom: 96px;
-}
-
-.main-cards {
+.main-container .main-cards {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin: 2.5rem 0 0 0;
 }
-
-/*Footer*/
-.footer-bg {
-  background-color: rgb(32, 41, 55);
-  z-index: -1;
+.main-container .main-cards .div1 {
+  width: 50%;
+}
+.main-container .main-cards .div1 img {
   width: 100%;
-  height: 60.625rem;
-  position: absolute;
+  border-radius: 12px;
+}
+.main-container .main-cards .div2 {
+  width: 50%;
+}
+.main-container .main-cards .div2 img {
+  width: 100%;
+  border-radius: 12px;
+}
+.main-container .main-splide-content {
+  margin-bottom: 96px;
 }
 
+/*Footer*/
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(32, 41, 55);
+  padding: 6rem 7rem 2.5rem 7rem;
+}
+.footer-container .footer-items-content {
   max-width: 90rem;
   margin: 0 auto;
-  padding: 6rem 7rem 2.5rem 7rem;
+  display: flex;
+  flex-direction: column;
   gap: 4rem;
 }
 .footer-container .footer-content {
@@ -209,10 +224,83 @@ body {
 .footer-container .footer-content .footer-first-part .footer-info .footer-items .bi-envelope {
   color: rgb(255, 255, 255);
 }
+.footer-container .footer-content .footer-form {
+  display: flex;
+  flex-direction: column;
+  width: 568px;
+  max-width: 600px;
+  position: relative;
+  padding: 32px 0 32px 32px;
+  gap: 32px;
+}
+.footer-container .footer-content .footer-form .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-container .footer-content .footer-form .row #name {
+  height: 42px;
+}
+.footer-container .footer-content .footer-form .row .group-name {
+  width: 50%;
+}
+.footer-container .footer-content .footer-form .input-group {
+  position: relative;
+  padding: 0.5rem 0 0 0;
+}
+.footer-container .footer-content .footer-form .input-group input, .footer-container .footer-content .footer-form .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(55, 65, 81);
+  font-size: 15px;
+  border: none;
+  border-radius: 0.25rem;
+  color: rgb(255, 255, 255);
+}
+.footer-container .footer-content .footer-form .input-group ::-moz-placeholder {
+  color: rgb(107, 114, 128);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+.footer-container .footer-content .footer-form .input-group ::placeholder {
+  color: rgb(107, 114, 128);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+.footer-container .footer-content .footer-form .input-group #email {
+  height: 42px;
+}
+.footer-container .footer-content .footer-form .input-group label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  padding: 0.5rem 0 0 0;
+}
+.footer-container .footer-content .footer-form button {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  background-color: rgb(249, 115, 22);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  cursor: pointer;
+}
 .footer-container .footer-second-part {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 24px;
 }
 .footer-container .footer-second-part .footer-item-contact {
   display: flex;
@@ -223,6 +311,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  width: 457px;
 }
 .footer-container .footer-second-part .footer-contact-list p {
   color: rgb(156, 163, 175);
@@ -304,68 +393,4 @@ body {
 .footer-container .footer-last-part .footer-last-info .footer-last-frame a {
   height: 14px;
   margin: 0.125rem 0 0 0.25rem;
-}
-
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  width: 568px;
-  max-width: 600px;
-  position: relative;
-  padding: 32px 0 32px 32px;
-  gap: 32px;
-}
-.footer-form .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-.footer-form .input-group {
-  position: relative;
-  padding: 0.5rem 0 0 0;
-}
-.footer-form .input-group input, .footer-form .input-group textarea {
-  width: 100%;
-  padding: 10px;
-  background-color: rgb(55, 65, 81);
-  font-size: 15px;
-  border: none;
-  border-radius: 0.25rem;
-  color: rgb(255, 255, 255);
-}
-.footer-form .input-group ::-moz-placeholder {
-  color: rgb(107, 114, 128);
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 400;
-}
-.footer-form .input-group ::placeholder {
-  color: rgb(107, 114, 128);
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 400;
-}
-.footer-form .input-group label {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 25px;
-  color: rgb(255, 255, 255);
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 500;
-  padding: 0.5rem 0 0 0;
-}
-.footer-form button {
-  color: #fff;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  background-color: rgb(249, 115, 22);
-  border: none;
-  border-radius: 0.25rem;
-  padding: 1rem 2rem 1rem 2rem;
-  width: 100%;
-  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -14,153 +14,179 @@ body {
     font-family: 'Golos Text', sans-serif;
 }
 
-// HEADER
-.header-wrapper { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: $header-height;
-    padding: $header-padding;
-    width: 100%;
+/* HEADER */
+.header-container {
     background-color: $brand-light;
-}
-
-.header-nav {
-    ul {
-        display: flex;
-        cursor: pointer;
-        @include gap-text(2rem)
-    }
-        li{
-            list-style-type: none;
-        }
-            a {
-                @include text-medium;
-                color: $text-secondary;
-                text-decoration: none;
-            }
-}
-
-.header-list {
     display: flex;
-    @include gap-text(0.5rem);
-}
+    justify-content: center;
 
-.header-btn {
-    button {
-        @include contact-btn;
-    }
-        p {
-            @include text-medium;
-            @include weight(500);
-        }
-}
-
-.dropdown {
-    position: relative;
-
-    .select {
-        background: transparent;
-        color: $text-primary;
+    .header-wrapper { 
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        @include padding-text(0.5rem 1rem);
-        @include text-medium;
+        height: $header-height;
+        max-width: 90rem;
+        margin: 0 48px;
+        border-bottom: 1px solid $brand-border;
+        padding: 32px 0;
+        width: 100%;
 
-        &:hover,
-        &:active {
-            background-color: aqua;
+        .header-nav {
+            ul {
+                display: flex;
+                cursor: pointer;
+                @include gap-text(2rem)
+            }
+                li{
+                    list-style-type: none;
+                }
+                    a {
+                        @include text-medium;
+                        color: $text-secondary;
+                        text-decoration: none;
+                    }
         }
-    }
-    
-    .caret {
-        width: 0;
-        border-left: 0.313rem solid transparent;
-        border-right: 0.313rem solid transparent;
-        border-top: 0.25rem solid black;
-        transition: 0.3s;
-        margin-left: 0.313rem;
-    }
-    
-    .caret-rotate {
-        transform: rotate(180deg);
-    }
-    
-    .menu {
-        list-style-type: none;
-        @include padding-text(0.5rem);
-        background: white;
-        box-shadow: 0px 16px 32px 0px rgba(82, 88, 117, 0.08);
-        @include radius(0.3rem);
-        color: $text-primary;
-        position: absolute;
-        top: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        display: none;
-        transition: 0.2s;
-        z-index: 1;
 
-        li {
-            @include padding-text(1rem);
-            @include margin-text(0.5rem 0);
-            @include radius(0.3rem);
+        .header-list {
+            display: flex;
+            @include gap-text(0.5rem);
+
+            .header-btn {
+                button {
+                    @include contact-btn;
+                }
+                    p {
+                        @include text-medium;
+                        @include weight(500);
+                    }
+            }
+
+            .dropdown {
+                position: relative;
+            
+                .select {
+                    background: transparent;
+                    color: $text-primary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include padding-text(0.5rem 1rem);
+                    @include text-medium;
+            
+                    &:hover,
+                    &:active {
+                        background-color: aqua;
+                    }
+                }
+                
+                .caret {
+                    width: 0;
+                    border-left: 0.313rem solid transparent;
+                    border-right: 0.313rem solid transparent;
+                    border-top: 0.25rem solid black;
+                    transition: 0.3s;
+                    margin-left: 0.313rem;
+                }
+                
+                .caret-rotate {
+                    transform: rotate(180deg);
+                }
+                
+                .menu {
+                    list-style-type: none;
+                    @include padding-text(0.5rem);
+                    background: white;
+                    box-shadow: 0px 16px 32px 0px rgba(82, 88, 117, 0.08);
+                    @include radius(0.3rem);
+                    color: $text-primary;
+                    position: absolute;
+                    top: 3rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    display: none;
+                    transition: 0.2s;
+                    z-index: 1;
+            
+                    li {
+                        @include padding-text(1rem);
+                        @include margin-text(0.5rem 0);
+                        @include radius(0.3rem);
+                    }
+                }
+                
+                .active {
+                    background: lightgrey;
+                }
+                
+                .menu-open {
+                    display: block;
+                    opacity: 1;
+                }
+            }
         }
-    }
-    
-    .active {
-        background: lightgrey;
-    }
-    
-    .menu-open {
-        display: block;
-        opacity: 1;
+        
     }
 }
 
 /*Main Content*/
 .main-container {
-    max-width: 90rem;
-    margin: 0 auto;
+    background-color: $brand-light;
 
     .main-content {
         display: flex;
         flex-direction: column;
         gap: 64px;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+
+    .main-cards {
+        display: flex;
+        justify-content: center;
+        @include gap-text(1rem);
+        @include margin-text(2.5rem 0 0 0);
+
+        .div1 {
+            width: 50%;
+        
+            img {
+                width: 100%;
+                border-radius: 12px;
+            }
+            
+        }
+        
+        .div2 {
+            width: 50%;
+        
+            img {
+                width: 100%;
+                border-radius: 12px;
+            }
+        }
     }
 
     .main-splide-content {
         margin-bottom: 96px;
     }
-
-}
-.main-cards {
-    display: flex;
-    justify-content: center;
-    @include gap-text(1rem);
-    @include margin-text(2.5rem 0 0 0);
-
 }
 
 /*Footer*/
-.footer-bg {
-    background-color: $dark-bg;
-    z-index: -1;
-    width: 100%;
-    height: 60.625rem;
-    position: absolute;
-}
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 90rem;
-    margin: 0 auto;
-    
+    background-color: $dark-bg;
     @include padding-text(6rem 7rem 2.5rem 7rem);
-    @include gap-text(4rem);
+
+    .footer-items-content {
+        max-width: 90rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        @include gap-text(4rem);
+    }
 
     .footer-content {
         display: flex;
@@ -168,6 +194,7 @@ body {
         width: 100%;
         height: 29.375rem;
         justify-content: space-between;
+        
 
 
         .footer-first-part {
@@ -184,6 +211,7 @@ body {
                     @include text-medium;
                     color: $brand-color;
                     @include weight(500);
+                    
                 }
     
                 h2 {
@@ -226,11 +254,90 @@ body {
             }
             
         }
+        .footer-form {
+            display: flex;
+            flex-direction: column;
+            width: 568px;
+            max-width: 600px;
+            position: relative;
+            @include padding-text(32px 0 32px 32px);
+            @include gap-text(32px);
+        
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+        
+                #name {
+                    height: 42px;
+                }
+
+                .group-name {
+                    width: 50%;
+                }
+            }
+
+        
+            .input-group {
+                position: relative;
+                @include padding-text(0.5rem 0 0 0);
+            
+            
+                
+        
+                input, textarea {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: $color-ondark;
+                    font-size: 15px;
+                    border: none;
+                    @include radius(0.25rem);
+                    color: $text-inverse;
+                }
+        
+                
+                ::placeholder {
+                    color: $text-tertiary;
+                    @include text-small;
+                    @include weight(400);
+                }
+
+                #email {
+                    height: 42px;
+                }
+
+                label {
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 25px;
+                    color: $text-inverse;
+                    @include text-small;
+                    @include weight(500);
+                    @include padding-text(0.5rem 0 0 0);
+                }
+            }
+        
+            button {
+                color: #fff;
+                @include text-medium;
+                @include weight(500);
+                background-color: $brand-color;
+                border: none;
+                @include radius(0.25rem);
+                padding: 1rem 2rem 1rem 2rem;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+
     }
     .footer-second-part {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 24px;
         
         .footer-item-contact {
             display: flex;
@@ -242,6 +349,7 @@ body {
             display: flex;
             flex-direction: column;
             @include gap-text(0.25rem);
+            width: 457px;
     
             p {
                 color: $text-quad;
@@ -341,70 +449,7 @@ body {
 
 
 
-.footer-form {
-    display: flex;
-    flex-direction: column;
-    width: 568px;
-    max-width: 600px;
-    position: relative;
-    @include padding-text(32px 0 32px 32px);
-    @include gap-text(32px);
 
-    .row{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .input-group {
-        position: relative;
-        @include padding-text(0.5rem 0 0 0);
-        
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            background-color: $color-ondark;
-            font-size: 15px;
-            border: none;
-            @include radius(0.25rem);
-            color: $text-inverse;
-        }
-
-        
-        ::placeholder {
-            color: $text-tertiary;
-            @include text-small;
-            @include weight(400);
-        }
-
-
-
-        label {
-            height: 100%;
-            position: absolute;
-            left: 0;
-            bottom: 25px;
-            color: $text-inverse;
-            @include text-small;
-            @include weight(500);
-            @include padding-text(0.5rem 0 0 0);
-        }
-    }
-
-    button {
-        color: #fff;
-        @include text-medium;
-        @include weight(500);
-        background-color: $brand-color;
-        border: none;
-        @include radius(0.25rem);
-        padding: 1rem 2rem 1rem 2rem;
-        width: 100%;
-        cursor: pointer;
-    }
-}
 
 
 
