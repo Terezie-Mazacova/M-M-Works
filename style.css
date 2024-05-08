@@ -393,4 +393,16 @@ body {
 .footer-container .footer-last-part .footer-last-info .footer-last-frame a {
   height: 14px;
   margin: 0.125rem 0 0 0.25rem;
+}
+
+.elektro-bg {
+  background-color: rgb(234, 237, 241);
+  height: 528px;
+}
+
+.main-information {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
