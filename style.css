@@ -396,13 +396,132 @@ body {
 }
 
 .elektro-bg {
+  display: flex;
+  align-items: center;
   background-color: rgb(234, 237, 241);
   height: 528px;
 }
-
-.main-information {
+.elektro-bg .main-information {
   max-width: 90rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  gap: 64px;
+}
+.elektro-bg .main-information .elektro-features {
+  max-width: 555px;
+}
+.elektro-bg .main-information .elektro-features .elektro-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 4px;
+  color: rgb(107, 114, 128);
+}
+.elektro-bg .main-information .elektro-features .elektro-items p {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+.elektro-bg .main-information .elektro-features h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: rgb(15, 19, 26);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.elektro-bg .main-information .elektro-features p {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+}
+.elektro-bg .main-information img {
+  border-radius: 12px;
+}
+
+.main-splide-content {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.section-cards {
+  display: flex;
+  align-items: center;
+  height: 568px;
+}
+.section-cards .elektro-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  margin: 0 auto;
+  gap: 40px;
+}
+.section-cards .elektro-cards h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: rgb(15, 19, 26);
+}
+.section-cards .elektro-cards .elektro-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.section-cards .elektro-cards .elektro-item .elektro-card {
+  display: flex;
+  flex-basis: calc(33.33% - 20px);
+  padding: 16px 20px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgb(209, 213, 219);
+  gap: 16px;
+}
+.section-cards .elektro-cards .elektro-item .elektro-card h5 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.section-services {
+  height: 1152px;
+}
+.section-services .services-features {
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  margin: 0 auto;
+  gap: 64px;
+}
+.section-services .services-features .services-items {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.section-services .services-features .services-items .services-text {
+  width: 50%;
+}
+.section-services .services-features .services-items .services-text h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 16px;
+}
+.section-services .services-features .services-items .services-text p {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: rgb(56, 65, 80);
+  font-weight: 400;
+}
+.section-services .services-features .services-items .services-text .highlight-part {
+  font-weight: 600;
+}
+.section-services .services-features .services-items .services-part {
+  padding: 0 56px 0 0;
+}
+.section-services .services-features .services-items .services-part-second {
+  padding: 0 0 0 56px;
+}
+.section-services .services-features .services-items .services-img {
+  width: 50%;
+}
+.section-services .services-features .services-items .services-img img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

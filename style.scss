@@ -447,25 +447,153 @@ body {
 
 
 .elektro-bg {
+    display: flex;
+    align-items: center;
     background-color: $brand-light;
     height: 528px;
 
+    .main-information {
+        max-width: 90rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 64px;
+
+        .elektro-features {
+            max-width: 555px;
+
+            .elektro-items {
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+                gap: 4px;
+                color: $text-tertiary;      
+
+                p {
+                    @include text-large;
+                }
+            }
+
+            h1 {
+                @include h1;
+                color: $text-primary;
+                font-weight: 600;
+                margin-bottom: 24px;
+            }
+
+            p {
+                @include text-large;
+                font-weight: 400;
+                
+            }
+        }
+
+        img {
+            border-radius: 12px;
+        }
+    }
 }
-.main-information {
+
+.main-splide-content {
     max-width: 90rem;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
 
+.section-cards {
+    display: flex;
+    align-items: center;
+    height: 568px;
 
+    .elektro-cards {
+        display: flex;
+        flex-direction: column;
+        max-width: 90rem;
+        margin: 0 auto;
+        gap: 40px;
+    
+        h2 {
+            @include h2;
+            font-weight: 600;
+            color: $text-primary;
+        }
+    
+        .elektro-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            
+            
+    
+            .elektro-card {
+                display: flex;
+                flex-basis: calc(33.33% - 20px);
+                padding: 16px 20px;
+                align-items: center;
+                border-radius: 8px;
+                border: 1px solid rgba(209, 213, 219, 1);
+                gap: 16px;
+                
+    
+                h5 {
+                    @include h5;
+                    font-weight: 600;
+                }
+                
+            }
+        }
+    }
+}
 
+.section-services {
+    height: 1152px;
 
+    .services-features {
+        display: flex;
+        flex-direction: column;
+        max-width: 90rem;
+        margin: 0 auto;
+        gap: 64px;
 
+        .services-items {
+            display: flex;
+            align-items: center;
+            gap: 48px;
 
+            .services-text {
+                width: 50%;
 
+                h2 {
+                    @include h2;
+                    margin-bottom: 16px;
+                }
+    
+                p {
+                    @include text-large;
+                    color: $text-secondary;
+                    font-weight: 400;
+                }
+    
+                .highlight-part {
+                    font-weight: 600;
+                }
+            }
 
+            .services-part {
+                padding: 0 56px 0 0;
+            }
 
+            .services-part-second {
+                padding: 0 0 0 56px;
+            }
 
+            .services-img {
+                width: 50%;
 
+                img {
+                    width: 100%;
+                }
+            }
 
+        }
+    }
+}
