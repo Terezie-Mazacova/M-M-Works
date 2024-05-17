@@ -62,8 +62,8 @@
 
 @mixin contact-btn {
     display: flex;
-    @include gap-text(0.5rem);
-    @include padding-text(0.5rem 1rem);
+    @include gap(0.5rem);
+    @include padding(0.5rem 1rem);
     cursor: pointer;
     color: $text-primary;
     align-items: center;

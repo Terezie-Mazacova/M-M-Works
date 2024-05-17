@@ -660,3 +660,35 @@ body {
         }
     }
 }
+
+.section-example {
+    height: 47.375rem;
+
+    .container-example {
+        display: flex;
+        flex-direction: column;
+        max-width: 90rem;
+        @include margin(0 auto);
+
+        .info-example {
+            max-width: 53.313rem;
+            
+            h2 {
+                @include h2;
+                color: $text-primary;
+                @include weight(600);
+                @include margin(0 0 1rem 0);
+            }
+    
+            p{
+                @include text-large;
+                @include weight(400);
+                color: $text-secondary;
+            }
+        }
+    }
+}
+
+.splide2 img {
+    width: 100%;
+}

@@ -1,15 +1,30 @@
 /* Slider s logy na uvodni strance webu */
 document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {
+    var splide1 = new Splide( '.slider1', {
         perPage: 6,
         gap: '10px',
         pagination: false,
         type: 'loop',
         autoplay: true,
         interval: 1000,
-        speed: 900000
+        speed: 900000,
+        arrows: false
     });
-    splide.mount();
+    splide1.mount();
+
+    var splide2 = new Splide('.slider2', {
+        type: 'loop',
+        width: '100%',
+        perPage: 4,
+        gap: '10px',
+        autoplay: true,
+        perMove: 1,
+        interval: 3000,
+        speed: 900,
+        arrows: false
+    });
+    splide2.mount();
+
 } );
 
 /*Dropdown*/
