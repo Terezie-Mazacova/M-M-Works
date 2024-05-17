@@ -26,16 +26,16 @@ body {
         align-items: center;
         height: $header-height;
         max-width: 90rem;
-        margin: 0 48px;
-        border-bottom: 1px solid $brand-border;
-        padding: 32px 0;
+        @include margin(0 3rem);
+        border-bottom: 0.063rem solid $brand-border;
+        @include padding(2rem 0);
         width: 100%;
 
         .header-nav {
             ul {
                 display: flex;
                 cursor: pointer;
-                @include gap-text(2rem)
+                @include gap(2rem)
             }
                 li{
                     list-style-type: none;
@@ -49,7 +49,7 @@ body {
 
         .header-list {
             display: flex;
-            @include gap-text(0.5rem);
+            @include gap(0.5rem);
 
             .header-btn {
                 button {
@@ -70,7 +70,7 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    @include padding-text(0.5rem 1rem);
+                    @include padding(0.5rem 1rem);
                     @include text-medium;
             
                     &:hover,
@@ -85,7 +85,7 @@ body {
                     border-right: 0.313rem solid transparent;
                     border-top: 0.25rem solid black;
                     transition: 0.3s;
-                    margin-left: 0.313rem;
+                    @include margin(0 0 0 0.313rem);
                 }
                 
                 .caret-rotate {
@@ -94,9 +94,9 @@ body {
                 
                 .menu {
                     list-style-type: none;
-                    @include padding-text(0.5rem);
+                    @include padding(0.5rem);
                     background: white;
-                    box-shadow: 0px 16px 32px 0px rgba(82, 88, 117, 0.08);
+                    box-shadow: 0 1rem 2rem 0 rgba(82, 88, 117, 0.08);
                     @include radius(0.3rem);
                     color: $text-primary;
                     position: absolute;
@@ -109,8 +109,8 @@ body {
                     z-index: 1;
             
                     li {
-                        @include padding-text(1rem);
-                        @include margin-text(0.5rem 0);
+                        @include padding(1rem);
+                        @include margin(0.5rem 0);
                         @include radius(0.3rem);
                     }
                 }
@@ -136,39 +136,39 @@ body {
     .main-content {
         display: flex;
         flex-direction: column;
-        gap: 64px;
+        @include gap(4rem);
         max-width: 90rem;
-        margin: 0 auto;
+        @include margin(0 auto);
     }
 
     .main-cards {
         display: flex;
         justify-content: center;
-        @include gap-text(1rem);
-        @include margin-text(2.5rem 0 0 0);
+        @include gap(1rem);
+        @include margin(2.5rem 0 0 0);
 
-        .div1 {
+        .main-cards-div1 {
             width: 50%;
         
             img {
                 width: 100%;
-                border-radius: 12px;
+                @include radius(0.75rem);
             }
             
         }
         
-        .div2 {
+        .main-cards-div2 {
             width: 50%;
         
             img {
                 width: 100%;
-                border-radius: 12px;
+                @include radius(0.75rem);
             }
         }
     }
 
     .main-splide-content {
-        margin-bottom: 96px;
+        @include margin(0 0 6rem 0);
     }
 }
 
@@ -178,19 +178,19 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: $dark-bg;
-    @include padding-text(6rem 7rem 2.5rem 7rem);
+    @include padding(6rem 7rem 2.5rem 7rem);
 
     .footer-items-content {
         max-width: 90rem;
-        margin: 0 auto;
+        @include margin(0 auto);
         display: flex;
         flex-direction: column;
-        @include gap-text(4rem);
+        @include gap(4rem);
     }
 
     .footer-content {
         display: flex;
-        @include gap-text(4rem);
+        @include gap(4rem);
         width: 100%;
         height: 29.375rem;
         justify-content: space-between;
@@ -200,12 +200,12 @@ body {
         .footer-first-part {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            @include gap(1.875rem);
 
             .first-part-text {
                 display: flex;
                 flex-direction: column;
-                @include gap-text(1rem);
+                @include gap(1rem);
 
                 .footer-contact {
                     @include text-medium;
@@ -231,11 +231,11 @@ body {
             .footer-info {
                 display: flex;
                 flex-direction: column;
-                @include gap-text(1.313rem);
+                @include gap(1.313rem);
                 
                 .footer-items {
                     display: flex;
-                    @include gap-text(0.5rem);
+                    @include gap(0.5rem);
                     align-items: center;
 
                     p {
@@ -257,20 +257,20 @@ body {
         .footer-form {
             display: flex;
             flex-direction: column;
-            width: 568px;
-            max-width: 600px;
+            width: 35.5rem;
+            max-width: 37.5rem;
             position: relative;
-            @include padding-text(32px 0 32px 32px);
-            @include gap-text(32px);
+            @include padding(2rem 0 2rem 2rem);
+            @include gap(2rem);
         
             .row{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: 20px;
+                @include gap(1.25rem);
         
                 #name {
-                    height: 42px;
+                    height: 2.625rem;
                 }
 
                 .group-name {
@@ -281,14 +281,14 @@ body {
         
             .input-group {
                 position: relative;
-                @include padding-text(0.5rem 0 0 0);
+                @include padding(0.5rem 0 0 0);
             
             
                 
         
                 input, textarea {
                     width: 100%;
-                    padding: 10px;
+                    @include padding(0.625rem);
                     background-color: $color-ondark;
                     font-size: 15px;
                     border: none;
@@ -304,18 +304,18 @@ body {
                 }
 
                 #email {
-                    height: 42px;
+                    height: 2.625rem;
                 }
 
                 label {
                     height: 100%;
                     position: absolute;
                     left: 0;
-                    bottom: 25px;
+                    bottom: 1.563rem;
                     color: $text-inverse;
                     @include text-small;
                     @include weight(500);
-                    @include padding-text(0.5rem 0 0 0);
+                    @include padding(0.5rem 0 0 0);
                 }
             }
         
@@ -326,7 +326,7 @@ body {
                 background-color: $brand-color;
                 border: none;
                 @include radius(0.25rem);
-                padding: 1rem 2rem 1rem 2rem;
+                @include padding(1rem 2rem);
                 width: 100%;
                 cursor: pointer;
             }
@@ -337,19 +337,19 @@ body {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 24px;
+        @include padding(1.5rem);
         
         .footer-item-contact {
             display: flex;
             flex-direction: column;
-            @include gap-text(1rem);
+            @include gap(1rem);
         }
     
         .footer-contact-list {
             display: flex;
             flex-direction: column;
-            @include gap-text(0.25rem);
-            width: 457px;
+            @include gap(0.25rem);
+            width: 28.563rem;
     
             p {
                 color: $text-quad;
@@ -361,7 +361,7 @@ body {
         .footer-first-list {
             display: flex;
             flex-direction: column;
-            @include gap-text(0.75rem);
+            @include gap(0.75rem);
     
             h4 {
                 @include text-large;
@@ -372,7 +372,7 @@ body {
             ul {
                 display: flex;
                 flex-direction: column;
-                @include gap-text(0.25rem);
+                @include gap(0.25rem);
                 list-style-type: none;
                 
                 a {
@@ -386,7 +386,7 @@ body {
         .footer-second-list {
             display: flex;
             flex-direction: column;
-            @include gap-text(0.75rem);
+            @include gap(0.75rem);
     
             h4 {
                 @include text-large;
@@ -397,7 +397,7 @@ body {
             ul {
                 display: flex;
                 flex-direction: column;
-                @include gap-text(0.25rem);
+                @include gap(0.25rem);
                 list-style-type: none;
                 
                 a {
@@ -411,12 +411,12 @@ body {
 
     .footer-last-part {
         width: 100%;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 0.063rem solid rgba(255, 255, 255, 0.1);
     
         .footer-last-info {
             display: flex;
             justify-content: space-between;
-            @include margin-text(1.5rem 0 0 0);
+            @include margin(1.5rem 0 0 0);
     
             .footer-frame {
                 p{
@@ -437,8 +437,8 @@ body {
                 }
     
                 a {
-                    height: 14px;
-                    @include margin-text(0.125rem 0 0 0.25rem);
+                    height: 0.875rem;
+                    @include margin(0.125rem 0 0 0.25rem);
                 }
             }
         }
@@ -450,23 +450,23 @@ body {
     display: flex;
     align-items: center;
     background-color: $brand-light;
-    height: 528px;
+    height: 33rem;
 
     .main-information {
         max-width: 90rem;
-        margin: 0 auto;
+        @include margin(0 auto);
         display: flex;
         align-items: center;
-        gap: 64px;
+        @include gap(4rem);
 
         .elektro-features {
-            max-width: 555px;
+            max-width: 34.688rem;
 
             .elektro-items {
                 display: flex;
                 align-items: center;
-                margin-bottom: 24px;
-                gap: 4px;
+                @include margin(0 0 1.5rem 0);
+                @include gap(0.25rem);
                 color: $text-tertiary;      
 
                 p {
@@ -477,66 +477,66 @@ body {
             h1 {
                 @include h1;
                 color: $text-primary;
-                font-weight: 600;
-                margin-bottom: 24px;
+                @include weight(600);
+                @include margin(0 0 1.5rem 0);
             }
 
             p {
                 @include text-large;
-                font-weight: 400;
+                @include weight(400);
                 
             }
         }
 
         img {
-            border-radius: 12px;
+            @include radius(0.75rem);
         }
     }
 }
 
 .main-splide-content {
     max-width: 90rem;
-    margin: 0 auto;
+    @include margin(0 auto);
 }
 
 .section-cards {
     display: flex;
     align-items: center;
-    height: 568px;
+    height: 35.5rem;
 
     .elektro-cards {
         display: flex;
         flex-direction: column;
         max-width: 90rem;
-        margin: 0 auto;
-        gap: 40px;
+        @include margin(0 auto);
+        @include gap(2.5rem);
     
         h2 {
             @include h2;
-            font-weight: 600;
+            @include weight(600);
             color: $text-primary;
         }
     
         .elektro-item {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
+            @include gap(1rem);
             
             
     
             .elektro-card {
                 display: flex;
-                flex-basis: calc(33.33% - 20px);
-                padding: 16px 20px;
+                flex-basis: calc(33.33% - 1.25rem);
+                @include padding(1rem 1.25rem);
                 align-items: center;
-                border-radius: 8px;
-                border: 1px solid rgba(209, 213, 219, 1);
-                gap: 16px;
+                @include radius(0.5rem);
+                border: 0.063rem solid rgba(209, 213, 219, 1);
+                @include gap(1rem);
                 
     
                 h5 {
                     @include h5;
-                    font-weight: 600;
+                    @include weight(600);
                 }
                 
             }
@@ -545,45 +545,45 @@ body {
 }
 
 .section-services {
-    height: 1152px;
+    height: 72rem;
 
     .services-features {
         display: flex;
         flex-direction: column;
         max-width: 90rem;
-        margin: 0 auto;
-        gap: 64px;
+        @include margin(0 auto);
+        @include gap(4rem);
 
         .services-items {
             display: flex;
             align-items: center;
-            gap: 48px;
+            @include gap(3rem);
 
             .services-text {
                 width: 50%;
 
                 h2 {
                     @include h2;
-                    margin-bottom: 16px;
+                    @include margin(0 0 1rem 0);
                 }
     
                 p {
                     @include text-large;
                     color: $text-secondary;
-                    font-weight: 400;
+                    @include weight(400);
                 }
     
                 .highlight-part {
-                    font-weight: 600;
+                    @include weight(600);
                 }
             }
 
             .services-part {
-                padding: 0 56px 0 0;
+                @include padding(0 3.5rem 0 0);
             }
 
             .services-part-second {
-                padding: 0 0 0 56px;
+                @include padding(0 0 0 3.5rem);
             }
 
             .services-img {
@@ -601,52 +601,52 @@ body {
 .section-items {
     display: flex;
     align-items: center;
-    height: 488px;
+    height: 30.5rem;
 
     .content-items-info {
         display: flex;
         flex-direction: column;
         max-width: 90rem;
-        margin: 0 auto;
+        @include margin(0 auto);
     }
 
     h2 {
         @include h2;
-        margin-bottom: 40px;
+        @include margin(0 0 2.5rem 0);
     }
 
     .items-features {
         display: flex;
-        gap: 64px;
+        @include gap(4rem);
 
         .items-content {
             display: flex;
             flex-direction: column;
-            border-radius: 12px;
-            padding: 24px 24px 32px 24px;
+            @include radius(0.75rem);
+            @include padding(1.5rem 1.5rem 2rem 1.5rem);
             width: 100%;
-            gap: 24px;
+            @include gap(1.5rem);
             background-color: $dark-bg;
 
 
             .items-icon {
-                padding: 12px;
-                border: 1px solid $color-ondark;
-                width: 48px;
-                height: 48px;
-                border-radius: 4px;
+                @include padding(0.75rem);
+                border: 0.063rem solid $color-ondark;
+                width: 3rem;
+                height: 3rem;
+                @include radius(0.25rem);
             }
 
             h5 {
                 @include h5;
-                margin-bottom: 8px;
-                font-weight: 600;
+                @include margin(0 0 0.5rem 0);
+                @include weight(600);
                 color: $text-inverse;
             }
 
             p {
                 @include text-medium;
-                font-weight: 500;
+                @include weight(500);
                 color: $text-quad;
             }
         }
@@ -655,7 +655,7 @@ body {
             background-color: $text-secondary;
 
             .light-color-icon {
-                border: 1px solid $brand-border-light;
+                border: 0.063rem solid $brand-border-light;
             }
         }
     }

@@ -40,15 +40,15 @@
     line-height: 1.5rem;
 }
 
-@mixin gap-text($gap) {
+@mixin gap($gap) {
     gap: $gap;
 }
 
-@mixin padding-text($padding) {
+@mixin padding($padding) {
     padding: $padding;
 }
 
-@mixin margin-text($margin) {
+@mixin margin($margin) {
     margin: $margin;
 }
 

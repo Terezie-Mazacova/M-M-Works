@@ -22,9 +22,9 @@ body {
   align-items: center;
   height: 104px;
   max-width: 90rem;
-  margin: 0 48px;
-  border-bottom: 1px solid rgb(209, 213, 219);
-  padding: 32px 0;
+  margin: 0 3rem;
+  border-bottom: 0.063rem solid rgb(209, 213, 219);
+  padding: 2rem 0;
   width: 100%;
 }
 .header-container .header-wrapper .header-nav ul {
@@ -92,7 +92,7 @@ body {
   list-style-type: none;
   padding: 0.5rem;
   background: white;
-  box-shadow: 0px 16px 32px 0px rgba(82, 88, 117, 0.08);
+  box-shadow: 0px 1rem 2rem 0 rgba(82, 88, 117, 0.08);
   border-radius: 0.3rem;
   color: rgb(15, 19, 26);
   position: absolute;
@@ -124,7 +124,7 @@ body {
 .main-container .main-content {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 4rem;
   max-width: 90rem;
   margin: 0 auto;
 }
@@ -134,17 +134,17 @@ body {
   gap: 1rem;
   margin: 2.5rem 0 0 0;
 }
-.main-container .main-cards .div1 {
+.main-container .main-cards .main-cards-div1 {
   width: 50%;
 }
-.main-container .main-cards .div1 img {
+.main-container .main-cards .main-cards-div1 img {
   width: 100%;
   border-radius: 12px;
 }
-.main-container .main-cards .div2 {
+.main-container .main-cards .main-cards-div2 {
   width: 50%;
 }
-.main-container .main-cards .div2 img {
+.main-container .main-cards .main-cards-div2 img {
   width: 100%;
   border-radius: 12px;
 }
