@@ -19,11 +19,34 @@ document.addEventListener( 'DOMContentLoaded', function() {
         gap: '10px',
         autoplay: true,
         perMove: 1,
-        interval: 3000,
+        interval: 2000,
         speed: 900,
-        arrows: false
+        arrows: false,
+        pagination: true
     });
     splide2.mount();
+
+    var splide3 = new Splide('.slider3', {
+        perPage: 3,
+        gap: '20px',
+        pagination: false,
+        type: 'slide',
+        autoplay: false,
+        speed: 600,
+        arrows: false,
+        autoWidth: true,
+        breakpoints: {
+            1200: {
+                perPage: 2,
+                gap: '1rem',
+            },
+            768: {
+                perPage: 1,
+                gap: '1rem',
+            },
+        },
+    });
+    splide3.mount();
 
 } );
 

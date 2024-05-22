@@ -172,6 +172,52 @@ body {
     }
 }
 
+.slider1::before,
+.slider1::after {
+    background: linear-gradient(to right, rgba(234, 237, 241, 1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider1::before {
+    left: 0;
+    top: 0;
+}
+
+.slider1::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+
+.slider1.slider-bg::before,
+.slider1.slider-bg::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider1.slider-bg::before {
+    left: 0;
+    top: 0;
+}
+
+.slider1.slider-bg::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+
 /*Footer*/
 .footer-container {
     display: flex;
@@ -211,9 +257,8 @@ body {
                     @include text-medium;
                     color: $brand-color;
                     @include weight(500);
-                    
                 }
-    
+
                 h2 {
                     @include h2;
                     color: $text-inverse;
@@ -445,6 +490,11 @@ body {
     }
 }
 
+.section-slider1 {
+    height: 12.5rem;
+    display: flex;
+    align-items: center;
+}
 
 .elektro-bg {
     display: flex;
@@ -663,12 +713,15 @@ body {
 
 .section-example {
     height: 47.375rem;
+    display: flex;
+    align-items: center;
 
     .container-example {
         display: flex;
         flex-direction: column;
         max-width: 90rem;
         @include margin(0 auto);
+        @include gap(40px);
 
         .info-example {
             max-width: 53.313rem;
@@ -686,9 +739,78 @@ body {
                 color: $text-secondary;
             }
         }
+
+        .splide2 img {
+            width: 100%;
+        }
+        
+        .splide__pagination {
+            position: relative!important;
+            bottom: 0!important;
+            margin-top: 0.625rem!important;
+        }
+        
+        .splide__pagination__page.is-active {
+            background: rgba(28, 30, 40, 1) !important;
+        }
     }
 }
 
-.splide2 img {
+
+.section-aboutus {
+    height: 626px;
+    background-color: $brand-light;
+    display: flex;
+    align-items: center;
+
+    .container-aboutus {
+        display: flex;
+        max-width: 90rem;
+        @include margin(0 auto);
+
+        .container-info {
+            width: 50%;
+
+            .container-aboutus-word {
+                color: $brand-color;
+                @include weight(500);
+                @include text-medium;
+            }
+
+            h2 {
+                @include h2;
+                @include weight(600);
+                color: $text-primary;
+                @include margin(24px 0 24px 0);
+            }
+
+            p {
+                @include text-large;
+                @include weight(400);
+                color: $text-secondary;
+            }
+        }
+    }
+}
+
+
+
+.slider3 {
+    display: flex;
+    justify-content: flex-end; /* Zarovná slidy na pravou stranu */
+}
+
+#splide03-track {
+    /*width: 50%; docasne*/ 
+}
+
+.slider3 img {
+    height: 280px;
     width: 100%;
+    object-fit: cover; 
+}
+
+.slide-caption {
+    background-color: green;
+    padding: 20px;
 }
