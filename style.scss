@@ -491,9 +491,9 @@ body {
 }
 
 .section-slider1 {
-    height: 12.5rem;
     display: flex;
     align-items: center;
+    @include padding(4rem 0 2.5rem 0);
 }
 
 .elektro-bg {
@@ -552,7 +552,8 @@ body {
 .section-cards {
     display: flex;
     align-items: center;
-    height: 35.5rem;
+    @include padding(6rem 0);
+
 
     .elektro-cards {
         display: flex;
@@ -595,7 +596,7 @@ body {
 }
 
 .section-services {
-    height: 72rem;
+    @include padding(6rem 0);
 
     .services-features {
         display: flex;
@@ -651,7 +652,7 @@ body {
 .section-items {
     display: flex;
     align-items: center;
-    height: 30.5rem;
+    @include padding(6rem 0);
 
     .content-items-info {
         display: flex;
@@ -712,9 +713,9 @@ body {
 }
 
 .section-example {
-    height: 47.375rem;
     display: flex;
     align-items: center;
+    @include padding(6rem 0);
 
     .container-example {
         display: flex;
@@ -758,7 +759,7 @@ body {
 
 
 .section-aboutus {
-    height: 626px;
+    @include padding(6rem 5rem);
     background-color: $brand-light;
     display: flex;
     align-items: center;
@@ -781,7 +782,7 @@ body {
                 @include h2;
                 @include weight(600);
                 color: $text-primary;
-                @include margin(24px 0 24px 0);
+                @include margin(1.5rem 0);
             }
 
             p {

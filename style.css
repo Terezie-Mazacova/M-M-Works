@@ -439,9 +439,9 @@ body {
 }
 
 .section-slider1 {
-  height: 12.5rem;
   display: flex;
   align-items: center;
+  padding: 4rem 0 2.5rem 0;
 }
 
 .elektro-bg {
@@ -495,7 +495,7 @@ body {
 .section-cards {
   display: flex;
   align-items: center;
-  height: 35.5rem;
+  padding: 6rem 0;
 }
 .section-cards .elektro-cards {
   display: flex;
@@ -531,7 +531,7 @@ body {
 }
 
 .section-services {
-  height: 72rem;
+  padding: 6rem 0;
 }
 .section-services .services-features {
   display: flex;
@@ -578,7 +578,7 @@ body {
 .section-items {
   display: flex;
   align-items: center;
-  height: 30.5rem;
+  padding: 6rem 0;
 }
 .section-items .content-items-info {
   display: flex;
@@ -632,9 +632,9 @@ body {
 }
 
 .section-example {
-  height: 47.375rem;
   display: flex;
   align-items: center;
+  padding: 6rem 0;
 }
 .section-example .container-example {
   display: flex;
@@ -672,7 +672,7 @@ body {
 }
 
 .section-aboutus {
-  height: 626px;
+  padding: 6rem 5rem;
   background-color: rgb(234, 237, 241);
   display: flex;
   align-items: center;
@@ -696,7 +696,7 @@ body {
   line-height: 3rem;
   font-weight: 600;
   color: rgb(15, 19, 26);
-  margin: 24px 0 24px 0;
+  margin: 1.5rem 0;
 }
 .section-aboutus .container-aboutus .container-info p {
   font-size: 1.125rem;
