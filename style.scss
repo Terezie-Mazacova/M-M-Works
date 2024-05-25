@@ -801,10 +801,6 @@ body {
     justify-content: flex-end; /* Zarovná slidy na pravou stranu */
 }
 
-#splide03-track {
-    /*width: 50%; docasne*/ 
-}
-
 .slider3 img {
     height: 280px;
     width: 100%;
@@ -814,4 +810,50 @@ body {
 .slide-caption {
     background-color: green;
     padding: 20px;
+}
+
+
+.services-items-logistika {
+    width: 50%;
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        @include gap(1rem);
+        @include margin(2.5rem 0 0 0);
+
+        .services-logistika-list {
+            display: flex;
+            @include gap(0.75rem);
+        }
+        li {
+            list-style-type: none;
+
+            p {
+                color: $text-secondary;
+                @include text-medium;
+                @include weight(400);
+            }
+        }
+    }
+}
+
+.services-logistika-feature {
+    display: flex;
+    flex-direction: column;
+    @include gap(1rem);
+}
+
+.services-logistika-item {
+    @include margin(0 0 0 1.875rem);
+}
+
+.services-logistika-container {
+    display: flex;
+    align-items: center;
+    background-color: $brand-light;
+    @include padding(0.75rem 1rem);
+    @include radius(0.25rem);
+    @include margin(1.5rem 0 0 0);
+    @include gap(0.75rem);
 }
