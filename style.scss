@@ -5,6 +5,11 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+@import "components/slider";
+@import "pages/logistics";
+@import "components/footer";
+@import "components/header";
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -14,120 +19,7 @@ body {
     font-family: 'Golos Text', sans-serif;
 }
 
-/* HEADER */
-.header-container {
-    background-color: $brand-light;
-    display: flex;
-    justify-content: center;
 
-    .header-wrapper { 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: $header-height;
-        max-width: 90rem;
-        @include margin(0 3rem);
-        border-bottom: 0.063rem solid $brand-border;
-        @include padding(2rem 0);
-        width: 100%;
-
-        .header-nav {
-            ul {
-                display: flex;
-                cursor: pointer;
-                @include gap(2rem)
-            }
-                li{
-                    list-style-type: none;
-                }
-                    a {
-                        @include text-medium;
-                        color: $text-secondary;
-                        text-decoration: none;
-                    }
-        }
-
-        .header-list {
-            display: flex;
-            @include gap(0.5rem);
-
-            .header-btn {
-                button {
-                    @include contact-btn;
-                }
-                    p {
-                        @include text-medium;
-                        @include weight(500);
-                    }
-            }
-
-            .dropdown {
-                position: relative;
-            
-                .select {
-                    background: transparent;
-                    color: $text-primary;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    @include padding(0.5rem 1rem);
-                    @include text-medium;
-            
-                    &:hover,
-                    &:active {
-                        background-color: aqua;
-                    }
-                }
-                
-                .caret {
-                    width: 0;
-                    border-left: 0.313rem solid transparent;
-                    border-right: 0.313rem solid transparent;
-                    border-top: 0.25rem solid black;
-                    transition: 0.3s;
-                    @include margin(0 0 0 0.313rem);
-                }
-                
-                .caret-rotate {
-                    transform: rotate(180deg);
-                }
-                
-                .menu {
-                    list-style-type: none;
-                    @include padding(0.5rem);
-                    background: white;
-                    box-shadow: 0 1rem 2rem 0 rgba(82, 88, 117, 0.08);
-                    @include radius(0.3rem);
-                    color: $text-primary;
-                    position: absolute;
-                    top: 3rem;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    opacity: 0;
-                    display: none;
-                    transition: 0.2s;
-                    z-index: 1;
-            
-                    li {
-                        @include padding(1rem);
-                        @include margin(0.5rem 0);
-                        @include radius(0.3rem);
-                    }
-                }
-                
-                .active {
-                    background: lightgrey;
-                }
-                
-                .menu-open {
-                    display: block;
-                    opacity: 1;
-                }
-            }
-        }
-        
-    }
-}
 
 /*Main Content*/
 .main-container {
@@ -170,330 +62,6 @@ body {
     .main-splide-content {
         @include margin(0 0 6rem 0);
     }
-}
-
-.slider1::before,
-.slider1::after {
-    background: linear-gradient(to right, rgba(234, 237, 241, 1) 0%, rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-.slider1::before {
-    left: 0;
-    top: 0;
-}
-
-.slider1::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-
-
-.slider1.slider-bg::before,
-.slider1.slider-bg::after {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-.slider1.slider-bg::before {
-    left: 0;
-    top: 0;
-}
-
-.slider1.slider-bg::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-
-
-/*Footer*/
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $dark-bg;
-    @include padding(6rem 7rem 2.5rem 7rem);
-
-    .footer-items-content {
-        max-width: 90rem;
-        @include margin(0 auto);
-        display: flex;
-        flex-direction: column;
-        @include gap(4rem);
-    }
-
-    .footer-content {
-        display: flex;
-        @include gap(4rem);
-        width: 100%;
-        height: 29.375rem;
-        justify-content: space-between;
-        
-
-
-        .footer-first-part {
-            display: flex;
-            flex-direction: column;
-            @include gap(1.875rem);
-
-            .first-part-text {
-                display: flex;
-                flex-direction: column;
-                @include gap(1rem);
-
-                .footer-contact {
-                    @include text-medium;
-                    color: $brand-color;
-                    @include weight(500);
-                }
-
-                h2 {
-                    @include h2;
-                    color: $text-inverse;
-                    @include weight(600);
-                }
-    
-                p  {
-                    max-width: 35.5rem;
-                    @include text-medium;
-                    @include weight(400);
-                    color: $text-inverse;
-                }
-            }
-            
-            .footer-info {
-                display: flex;
-                flex-direction: column;
-                @include gap(1.313rem);
-                
-                .footer-items {
-                    display: flex;
-                    @include gap(0.5rem);
-                    align-items: center;
-
-                    p {
-                        color: $text-inverse;
-                        @include text-large;
-                    }
-
-                    .bi-telephone {
-                        color: $text-inverse;
-                    }
-
-                    .bi-envelope {
-                        color: $text-inverse;
-                    }
-                }
-            }
-            
-        }
-        .footer-form {
-            display: flex;
-            flex-direction: column;
-            width: 35.5rem;
-            max-width: 37.5rem;
-            position: relative;
-            @include padding(2rem 0 2rem 2rem);
-            @include gap(2rem);
-        
-            .row{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                @include gap(1.25rem);
-        
-                #name {
-                    height: 2.625rem;
-                }
-
-                .group-name {
-                    width: 50%;
-                }
-            }
-
-        
-            .input-group {
-                position: relative;
-                @include padding(0.5rem 0 0 0);
-            
-            
-                
-        
-                input, textarea {
-                    width: 100%;
-                    @include padding(0.625rem);
-                    background-color: $color-ondark;
-                    font-size: 15px;
-                    border: none;
-                    @include radius(0.25rem);
-                    color: $text-inverse;
-                }
-        
-                
-                ::placeholder {
-                    color: $text-tertiary;
-                    @include text-small;
-                    @include weight(400);
-                }
-
-                #email {
-                    height: 2.625rem;
-                }
-
-                label {
-                    height: 100%;
-                    position: absolute;
-                    left: 0;
-                    bottom: 1.563rem;
-                    color: $text-inverse;
-                    @include text-small;
-                    @include weight(500);
-                    @include padding(0.5rem 0 0 0);
-                }
-            }
-        
-            button {
-                color: #fff;
-                @include text-medium;
-                @include weight(500);
-                background-color: $brand-color;
-                border: none;
-                @include radius(0.25rem);
-                @include padding(1rem 2rem);
-                width: 100%;
-                cursor: pointer;
-            }
-        }
-
-    }
-    .footer-second-part {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        @include padding(1.5rem);
-        
-        .footer-item-contact {
-            display: flex;
-            flex-direction: column;
-            @include gap(1rem);
-        }
-    
-        .footer-contact-list {
-            display: flex;
-            flex-direction: column;
-            @include gap(0.25rem);
-            width: 28.563rem;
-    
-            p {
-                color: $text-quad;
-                @include text-small;
-                cursor: pointer;
-            }
-        }
-    
-        .footer-first-list {
-            display: flex;
-            flex-direction: column;
-            @include gap(0.75rem);
-    
-            h4 {
-                @include text-large;
-                color: $text-inverse;
-                @include weight(500);
-            }
-    
-            ul {
-                display: flex;
-                flex-direction: column;
-                @include gap(0.25rem);
-                list-style-type: none;
-                
-                a {
-                    text-decoration: none;
-                    @include text-small;
-                    color: $text-quad;
-                }
-            }
-        }
-    
-        .footer-second-list {
-            display: flex;
-            flex-direction: column;
-            @include gap(0.75rem);
-    
-            h4 {
-                @include text-large;
-                color: $text-inverse;
-                @include weight(500);
-            }
-    
-            ul {
-                display: flex;
-                flex-direction: column;
-                @include gap(0.25rem);
-                list-style-type: none;
-                
-                a {
-                    text-decoration: none;
-                    @include text-small;
-                    color: $text-quad;
-                }
-            }
-        }
-    }
-
-    .footer-last-part {
-        width: 100%;
-        border-top: 0.063rem solid rgba(255, 255, 255, 0.1);
-    
-        .footer-last-info {
-            display: flex;
-            justify-content: space-between;
-            @include margin(1.5rem 0 0 0);
-    
-            .footer-frame {
-                p{
-                    @include text-small;
-                    @include weight(400);
-                    color: $text-quad;
-                }
-            }
-    
-            .footer-last-frame {
-                display: flex;
-                align-items: center;
-                
-                p {
-                    @include text-small;
-                    @include weight(400);
-                    color: $text-tertiary;
-                }
-    
-                a {
-                    height: 0.875rem;
-                    @include margin(0.125rem 0 0 0.25rem);
-                }
-            }
-        }
-    }
-}
-
-.section-slider1 {
-    display: flex;
-    align-items: center;
-    @include padding(4rem 0 2.5rem 0);
 }
 
 .elektro-bg {
@@ -544,10 +112,7 @@ body {
     }
 }
 
-.main-splide-content {
-    max-width: 90rem;
-    @include margin(0 auto);
-}
+
 
 .section-cards {
     display: flex;
@@ -741,19 +306,7 @@ body {
             }
         }
 
-        .splide2 img {
-            width: 100%;
-        }
         
-        .splide__pagination {
-            position: relative!important;
-            bottom: 0!important;
-            margin-top: 0.625rem!important;
-        }
-        
-        .splide__pagination__page.is-active {
-            background: rgba(28, 30, 40, 1) !important;
-        }
     }
 }
 
@@ -795,65 +348,21 @@ body {
 }
 
 
-
-.slider3 {
-    display: flex;
-    justify-content: flex-end; /* Zarovná slidy na pravou stranu */
-}
-
-.slider3 img {
-    height: 280px;
-    width: 100%;
-    object-fit: cover; 
-}
-
-.slide-caption {
-    background-color: green;
-    padding: 20px;
+.w-100 {
+    width: 100% !important;
 }
 
 
-.services-items-logistika {
-    width: 50%;
-    
-    ul {
+/*section from Logistics*/
+.section-application {
+    .feature-app {
         display: flex;
-        flex-direction: column;
-        @include gap(1rem);
-        @include margin(2.5rem 0 0 0);
-
-        .services-logistika-list {
-            display: flex;
-            @include gap(0.75rem);
-        }
-        li {
-            list-style-type: none;
-
-            p {
-                color: $text-secondary;
-                @include text-medium;
-                @include weight(400);
-            }
-        }
+        align-items: center;
+        background-color: $brand-light;
+        height: 34.563rem;
+        max-width: 90rem;
+        @include margin(0 auto);
+        @include radius(0.688rem);
+        @include padding(0px 0px 0px 80px);
     }
-}
-
-.services-logistika-feature {
-    display: flex;
-    flex-direction: column;
-    @include gap(1rem);
-}
-
-.services-logistika-item {
-    @include margin(0 0 0 1.875rem);
-}
-
-.services-logistika-container {
-    display: flex;
-    align-items: center;
-    background-color: $brand-light;
-    @include padding(0.75rem 1rem);
-    @include radius(0.25rem);
-    @include margin(1.5rem 0 0 0);
-    @include gap(0.75rem);
 }

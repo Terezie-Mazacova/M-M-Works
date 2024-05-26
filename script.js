@@ -12,19 +12,21 @@ document.addEventListener( 'DOMContentLoaded', function() {
     });
     splide1.mount();
 
-    var splide2 = new Splide('.slider2', {
-        type: 'loop',
-        width: '100%',
-        perPage: 4,
-        gap: '10px',
-        autoplay: true,
-        perMove: 1,
-        interval: 2000,
-        speed: 900,
-        arrows: false,
-        pagination: true
-    });
-    splide2.mount();
+    if (document.querySelector('.slider2')){
+        var splide2 = new Splide('.slider2', {
+            type: 'loop',
+            width: '100%',
+            perPage: 4,
+            gap: '10px',
+            autoplay: true,
+            perMove: 1,
+            interval: 2000,
+            speed: 900,
+            arrows: false,
+            pagination: true
+        });
+        splide2.mount();
+    }
 
     var splide3 = new Splide('.slider3', {
         perPage: 3,

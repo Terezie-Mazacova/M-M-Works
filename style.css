@@ -1,156 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Golos Text", sans-serif;
-}
-
-/* HEADER */
-.header-container {
-  background-color: rgb(234, 237, 241);
-  display: flex;
-  justify-content: center;
-}
-.header-container .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 104px;
-  max-width: 90rem;
-  margin: 0 3rem;
-  border-bottom: 0.063rem solid rgb(209, 213, 219);
-  padding: 2rem 0;
-  width: 100%;
-}
-.header-container .header-wrapper .header-nav ul {
-  display: flex;
-  cursor: pointer;
-  gap: 2rem;
-}
-.header-container .header-wrapper .header-nav li {
-  list-style-type: none;
-}
-.header-container .header-wrapper .header-nav a {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: rgb(56, 65, 80);
-  text-decoration: none;
-}
-.header-container .header-wrapper .header-list {
-  display: flex;
-  gap: 0.5rem;
-}
-.header-container .header-wrapper .header-list .header-btn button {
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  color: rgb(15, 19, 26);
-  align-items: center;
-  border-radius: 0.25rem;
-  border: 1px solid rgb(209, 213, 219);
-  background-color: rgb(255, 255, 255);
-}
-.header-container .header-wrapper .header-list .header-btn p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-}
-.header-container .header-wrapper .header-list .dropdown {
-  position: relative;
-}
-.header-container .header-wrapper .header-list .dropdown .select {
-  background: transparent;
-  color: rgb(15, 19, 26);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.header-container .header-wrapper .header-list .dropdown .select:hover, .header-container .header-wrapper .header-list .dropdown .select:active {
-  background-color: aqua;
-}
-.header-container .header-wrapper .header-list .dropdown .caret {
-  width: 0;
-  border-left: 0.313rem solid transparent;
-  border-right: 0.313rem solid transparent;
-  border-top: 0.25rem solid black;
-  transition: 0.3s;
-  margin: 0 0 0 0.313rem;
-}
-.header-container .header-wrapper .header-list .dropdown .caret-rotate {
-  transform: rotate(180deg);
-}
-.header-container .header-wrapper .header-list .dropdown .menu {
-  list-style-type: none;
-  padding: 0.5rem;
-  background: white;
-  box-shadow: 0 1rem 2rem 0 rgba(82, 88, 117, 0.08);
-  border-radius: 0.3rem;
-  color: rgb(15, 19, 26);
-  position: absolute;
-  top: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  display: none;
-  transition: 0.2s;
-  z-index: 1;
-}
-.header-container .header-wrapper .header-list .dropdown .menu li {
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border-radius: 0.3rem;
-}
-.header-container .header-wrapper .header-list .dropdown .active {
-  background: lightgrey;
-}
-.header-container .header-wrapper .header-list .dropdown .menu-open {
-  display: block;
-  opacity: 1;
-}
-
-/*Main Content*/
-.main-container {
-  background-color: rgb(234, 237, 241);
-}
-.main-container .main-content {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+/*SLIDER FIRST*/
+.main-splide-content {
   max-width: 90rem;
   margin: 0 auto;
 }
-.main-container .main-cards {
+
+.section-slider1 {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 2.5rem 0 0 0;
-}
-.main-container .main-cards .main-cards-div1 {
-  width: 50%;
-}
-.main-container .main-cards .main-cards-div1 img {
-  width: 100%;
-  border-radius: 0.75rem;
-}
-.main-container .main-cards .main-cards-div2 {
-  width: 50%;
-}
-.main-container .main-cards .main-cards-div2 img {
-  width: 100%;
-  border-radius: 0.75rem;
-}
-.main-container .main-splide-content {
-  margin: 0 0 6rem 0;
+  align-items: center;
+  padding: 4rem 0 2.5rem 0;
 }
 
 .slider1::before,
@@ -193,6 +53,92 @@ body {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+
+/*SLIDER 2*/
+.splide2 img {
+  width: 100%;
+}
+
+.splide__pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 0.625rem !important;
+}
+
+.splide__pagination__page.is-active {
+  background: rgb(28, 30, 40) !important;
+}
+
+/*SLIDER 3*/
+.slider3 {
+  display: flex;
+  justify-content: flex-end; /* Zarovná slidy na pravou stranu */
+}
+
+.slider3 img {
+  height: 280px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide-caption {
+  background-color: green;
+  padding: 20px;
+}
+
+.services-items-logistika {
+  width: 50%;
+  padding-right: 3.5rem;
+}
+.services-items-logistika .services-logistika {
+  padding-left: 3.5rem;
+}
+.services-items-logistika .services-logistika ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2.5rem 0 0 0;
+}
+.services-items-logistika .services-logistika ul .services-logistika-list {
+  display: flex;
+  gap: 0.75rem;
+}
+.services-items-logistika .services-logistika ul li {
+  list-style-type: none;
+}
+.services-items-logistika .services-logistika ul li p {
+  color: rgb(56, 65, 80);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.services-logistika-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services-logistika-item {
+  margin: 0 0 0 1.875rem;
+}
+
+.services-logistika-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(234, 237, 241);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  margin: 1.5rem 0 0 0;
+  gap: 0.75rem;
+}
+.services-logistika-container p {
+  color: rgb(56, 65, 80) !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important; /*uz zoufalost*/
+  line-height: 1.5rem !important;
 }
 
 /*Footer*/
@@ -438,10 +384,156 @@ body {
   margin: 0.125rem 0 0 0.25rem;
 }
 
-.section-slider1 {
+/* HEADER */
+.header-container {
+  background-color: rgb(234, 237, 241);
   display: flex;
+  justify-content: center;
+}
+.header-container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 4rem 0 2.5rem 0;
+  height: 104px;
+  max-width: 90rem;
+  margin: 0 3rem;
+  border-bottom: 0.063rem solid rgb(209, 213, 219);
+  padding: 2rem 0;
+  width: 100%;
+}
+.header-container .header-wrapper .header-nav ul {
+  display: flex;
+  cursor: pointer;
+  gap: 2rem;
+}
+.header-container .header-wrapper .header-nav li {
+  list-style-type: none;
+}
+.header-container .header-wrapper .header-nav a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(56, 65, 80);
+  text-decoration: none;
+}
+.header-container .header-wrapper .header-list {
+  display: flex;
+  gap: 0.5rem;
+}
+.header-container .header-wrapper .header-list .header-btn button {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: rgb(15, 19, 26);
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(209, 213, 219);
+  background-color: rgb(255, 255, 255);
+}
+.header-container .header-wrapper .header-list .header-btn p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.header-container .header-wrapper .header-list .dropdown {
+  position: relative;
+}
+.header-container .header-wrapper .header-list .dropdown .select {
+  background: transparent;
+  color: rgb(15, 19, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.header-container .header-wrapper .header-list .dropdown .select:hover, .header-container .header-wrapper .header-list .dropdown .select:active {
+  background-color: aqua;
+}
+.header-container .header-wrapper .header-list .dropdown .caret {
+  width: 0;
+  border-left: 0.313rem solid transparent;
+  border-right: 0.313rem solid transparent;
+  border-top: 0.25rem solid black;
+  transition: 0.3s;
+  margin: 0 0 0 0.313rem;
+}
+.header-container .header-wrapper .header-list .dropdown .caret-rotate {
+  transform: rotate(180deg);
+}
+.header-container .header-wrapper .header-list .dropdown .menu {
+  list-style-type: none;
+  padding: 0.5rem;
+  background: white;
+  box-shadow: 0 1rem 2rem 0 rgba(82, 88, 117, 0.08);
+  border-radius: 0.3rem;
+  color: rgb(15, 19, 26);
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+.header-container .header-wrapper .header-list .dropdown .menu li {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0.3rem;
+}
+.header-container .header-wrapper .header-list .dropdown .active {
+  background: lightgrey;
+}
+.header-container .header-wrapper .header-list .dropdown .menu-open {
+  display: block;
+  opacity: 1;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Golos Text", sans-serif;
+}
+
+/*Main Content*/
+.main-container {
+  background-color: rgb(234, 237, 241);
+}
+.main-container .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.main-container .main-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem 0 0 0;
+}
+.main-container .main-cards .main-cards-div1 {
+  width: 50%;
+}
+.main-container .main-cards .main-cards-div1 img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+.main-container .main-cards .main-cards-div2 {
+  width: 50%;
+}
+.main-container .main-cards .main-cards-div2 img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+.main-container .main-splide-content {
+  margin: 0 0 6rem 0;
 }
 
 .elektro-bg {
@@ -485,11 +577,6 @@ body {
 }
 .elektro-bg .main-information img {
   border-radius: 0.75rem;
-}
-
-.main-splide-content {
-  max-width: 90rem;
-  margin: 0 auto;
 }
 
 .section-cards {
@@ -659,17 +746,6 @@ body {
   font-weight: 400;
   color: rgb(56, 65, 80);
 }
-.section-example .container-example .splide2 img {
-  width: 100%;
-}
-.section-example .container-example .splide__pagination {
-  position: relative !important;
-  bottom: 0 !important;
-  margin-top: 0.625rem !important;
-}
-.section-example .container-example .splide__pagination__page.is-active {
-  background: rgb(28, 30, 40) !important;
-}
 
 .section-aboutus {
   padding: 6rem 5rem;
@@ -705,62 +781,18 @@ body {
   color: rgb(56, 65, 80);
 }
 
-.slider3 {
-  display: flex;
-  justify-content: flex-end; /* Zarovná slidy na pravou stranu */
+.w-100 {
+  width: 100% !important;
 }
 
-.slider3 img {
-  height: 280px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slide-caption {
-  background-color: green;
-  padding: 20px;
-}
-
-.services-items-logistika {
-  width: 50%;
-}
-.services-items-logistika ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 2.5rem 0 0 0;
-}
-.services-items-logistika ul .services-logistika-list {
-  display: flex;
-  gap: 0.75rem;
-}
-.services-items-logistika ul li {
-  list-style-type: none;
-}
-.services-items-logistika ul li p {
-  color: rgb(56, 65, 80);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 400;
-}
-
-.services-logistika-feature {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.services-logistika-item {
-  margin: 0 0 0 1.875rem;
-}
-
-.services-logistika-container {
+/*section from Logistics*/
+.section-application .feature-app {
   display: flex;
   align-items: center;
   background-color: rgb(234, 237, 241);
-  padding: 0.75rem 1rem;
-  border-radius: 0.25rem;
-  margin: 1.5rem 0 0 0;
-  gap: 0.75rem;
+  height: 34.563rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  border-radius: 0.688rem;
+  padding: 0px 0px 0px 80px;
 }/*# sourceMappingURL=style.css.map */

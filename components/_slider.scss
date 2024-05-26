@@ -1,0 +1,85 @@
+
+/*SLIDER FIRST*/
+.main-splide-content {
+    max-width: 90rem;
+    @include margin(0 auto);
+}
+.section-slider1 {
+    display: flex;
+    align-items: center;
+    @include padding(4rem 0 2.5rem 0);
+}
+
+.slider1::before,
+.slider1::after {
+    background: linear-gradient(to right, rgba(234, 237, 241, 1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider1::before {
+    left: 0;
+    top: 0;
+}
+
+.slider1::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider1.slider-bg::before,
+.slider1.slider-bg::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider1.slider-bg::before {
+    left: 0;
+    top: 0;
+}
+
+.slider1.slider-bg::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/*SLIDER 2*/
+.splide2 img {
+    width: 100%;
+}
+
+.splide__pagination {
+    position: relative!important;
+    bottom: 0!important;
+    margin-top: 0.625rem!important;
+}
+
+.splide__pagination__page.is-active {
+    background: rgba(28, 30, 40, 1) !important;
+}
+
+/*SLIDER 3*/
+.slider3 {
+    display: flex;
+    justify-content: flex-end; /* Zarovná slidy na pravou stranu */
+}
+
+.slider3 img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.slide-caption {
+    background-color: green;
+    padding: 20px;
+}

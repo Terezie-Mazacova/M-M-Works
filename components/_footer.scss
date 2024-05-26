@@ -1,0 +1,271 @@
+/*Footer*/
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $dark-bg;
+    @include padding(6rem 7rem 2.5rem 7rem);
+
+    .footer-items-content {
+        max-width: 90rem;
+        @include margin(0 auto);
+        display: flex;
+        flex-direction: column;
+        @include gap(4rem);
+    }
+
+    .footer-content {
+        display: flex;
+        @include gap(4rem);
+        width: 100%;
+        height: 29.375rem;
+        justify-content: space-between;
+        
+
+
+        .footer-first-part {
+            display: flex;
+            flex-direction: column;
+            @include gap(1.875rem);
+
+            .first-part-text {
+                display: flex;
+                flex-direction: column;
+                @include gap(1rem);
+
+                .footer-contact {
+                    @include text-medium;
+                    color: $brand-color;
+                    @include weight(500);
+                }
+
+                h2 {
+                    @include h2;
+                    color: $text-inverse;
+                    @include weight(600);
+                }
+    
+                p  {
+                    max-width: 35.5rem;
+                    @include text-medium;
+                    @include weight(400);
+                    color: $text-inverse;
+                }
+            }
+            
+            .footer-info {
+                display: flex;
+                flex-direction: column;
+                @include gap(1.313rem);
+                
+                .footer-items {
+                    display: flex;
+                    @include gap(0.5rem);
+                    align-items: center;
+
+                    p {
+                        color: $text-inverse;
+                        @include text-large;
+                    }
+
+                    .bi-telephone {
+                        color: $text-inverse;
+                    }
+
+                    .bi-envelope {
+                        color: $text-inverse;
+                    }
+                }
+            }
+            
+        }
+        .footer-form {
+            display: flex;
+            flex-direction: column;
+            width: 35.5rem;
+            max-width: 37.5rem;
+            position: relative;
+            @include padding(2rem 0 2rem 2rem);
+            @include gap(2rem);
+        
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include gap(1.25rem);
+        
+                #name {
+                    height: 2.625rem;
+                }
+
+                .group-name {
+                    width: 50%;
+                }
+            }
+
+        
+            .input-group {
+                position: relative;
+                @include padding(0.5rem 0 0 0);
+            
+            
+                
+        
+                input, textarea {
+                    width: 100%;
+                    @include padding(0.625rem);
+                    background-color: $color-ondark;
+                    font-size: 15px;
+                    border: none;
+                    @include radius(0.25rem);
+                    color: $text-inverse;
+                }
+        
+                
+                ::placeholder {
+                    color: $text-tertiary;
+                    @include text-small;
+                    @include weight(400);
+                }
+
+                #email {
+                    height: 2.625rem;
+                }
+
+                label {
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 1.563rem;
+                    color: $text-inverse;
+                    @include text-small;
+                    @include weight(500);
+                    @include padding(0.5rem 0 0 0);
+                }
+            }
+        
+            button {
+                color: #fff;
+                @include text-medium;
+                @include weight(500);
+                background-color: $brand-color;
+                border: none;
+                @include radius(0.25rem);
+                @include padding(1rem 2rem);
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+
+    }
+    .footer-second-part {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include padding(1.5rem);
+        
+        .footer-item-contact {
+            display: flex;
+            flex-direction: column;
+            @include gap(1rem);
+        }
+    
+        .footer-contact-list {
+            display: flex;
+            flex-direction: column;
+            @include gap(0.25rem);
+            width: 28.563rem;
+    
+            p {
+                color: $text-quad;
+                @include text-small;
+                cursor: pointer;
+            }
+        }
+    
+        .footer-first-list {
+            display: flex;
+            flex-direction: column;
+            @include gap(0.75rem);
+    
+            h4 {
+                @include text-large;
+                color: $text-inverse;
+                @include weight(500);
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                @include gap(0.25rem);
+                list-style-type: none;
+                
+                a {
+                    text-decoration: none;
+                    @include text-small;
+                    color: $text-quad;
+                }
+            }
+        }
+    
+        .footer-second-list {
+            display: flex;
+            flex-direction: column;
+            @include gap(0.75rem);
+    
+            h4 {
+                @include text-large;
+                color: $text-inverse;
+                @include weight(500);
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                @include gap(0.25rem);
+                list-style-type: none;
+                
+                a {
+                    text-decoration: none;
+                    @include text-small;
+                    color: $text-quad;
+                }
+            }
+        }
+    }
+
+    .footer-last-part {
+        width: 100%;
+        border-top: 0.063rem solid rgba(255, 255, 255, 0.1);
+    
+        .footer-last-info {
+            display: flex;
+            justify-content: space-between;
+            @include margin(1.5rem 0 0 0);
+    
+            .footer-frame {
+                p{
+                    @include text-small;
+                    @include weight(400);
+                    color: $text-quad;
+                }
+            }
+    
+            .footer-last-frame {
+                display: flex;
+                align-items: center;
+                
+                p {
+                    @include text-small;
+                    @include weight(400);
+                    color: $text-tertiary;
+                }
+    
+                a {
+                    height: 0.875rem;
+                    @include margin(0.125rem 0 0 0.25rem);
+                }
+            }
+        }
+    }
+}
