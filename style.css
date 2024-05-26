@@ -92,9 +92,6 @@
   width: 50%;
   padding-right: 3.5rem;
 }
-.services-items-logistika .services-logistika {
-  padding-left: 3.5rem;
-}
 .services-items-logistika .services-logistika ul {
   display: flex;
   flex-direction: column;
@@ -785,14 +782,58 @@ body {
   width: 100% !important;
 }
 
+/*padding-left*/
+.p-l-56 {
+  padding-left: 3.5rem;
+}
+
 /*section from Logistics*/
+.section-application {
+  padding: 6rem 0;
+}
 .section-application .feature-app {
   display: flex;
   align-items: center;
   background-color: rgb(234, 237, 241);
-  height: 34.563rem;
   max-width: 90rem;
   margin: 0 auto;
   border-radius: 0.688rem;
-  padding: 0px 0px 0px 80px;
+  padding: 0 0 0 5rem;
+}
+.section-application .feature-app .container-app {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.section-application .feature-app .container-app .container-app-text h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: rgb(15, 19, 26);
+  margin-bottom: 1rem;
+}
+.section-application .feature-app .container-app .container-app-text .app-large {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: rgb(56, 65, 80);
+}
+.section-application .feature-app .container-app-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-application .feature-app .container-app-list ul li {
+  list-style-type: none;
+  display: flex;
+  gap: 0.75rem;
+}
+.section-application .feature-app .container-app-list ul li p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(56, 65, 80);
+  font-weight: 400;
+}
+.section-application .feature-app .container-app-img {
+  margin: 2.6875rem 0;
 }/*# sourceMappingURL=style.css.map */

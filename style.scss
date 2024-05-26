@@ -352,17 +352,67 @@ body {
     width: 100% !important;
 }
 
+/*padding-left*/
+.p-l-56 {
+    padding-left: 3.5rem;
+}
+
 
 /*section from Logistics*/
 .section-application {
+    padding: 6rem 0;
+    
     .feature-app {
         display: flex;
         align-items: center;
         background-color: $brand-light;
-        height: 34.563rem;
         max-width: 90rem;
-        @include margin(0 auto);
-        @include radius(0.688rem);
-        @include padding(0px 0px 0px 80px);
+        margin: 0 auto;
+        border-radius: 0.688rem;
+        padding: 0 0 0 5rem;
+
+        .container-app {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            .container-app-text {
+                h2 {
+                    @include h2;
+                    font-weight: 600;
+                    color: $text-primary;
+                    margin-bottom: 1rem;
+                }
+
+                .app-large {
+                    @include text-large;
+                    font-weight: 400;
+                    color: $text-secondary;
+                }
+            }
+        }
+
+        .container-app-list {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    gap: .75rem;
+
+                    p {
+                        @include text-medium;
+                        color: $text-secondary;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .container-app-img {
+            margin: 2.6875rem 0;
+        }
     }
 }
