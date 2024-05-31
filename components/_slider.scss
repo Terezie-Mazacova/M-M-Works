@@ -2,12 +2,12 @@
 /*SLIDER FIRST*/
 .main-splide-content {
     max-width: 90rem;
-    @include margin(0 auto);
+    margin: 0 auto;
 }
 .section-slider1 {
     display: flex;
     align-items: center;
-    @include padding(4rem 0 2.5rem 0);
+    padding: 4rem 0 2.5rem 0;
 }
 
 .slider1::before,

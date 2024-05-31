@@ -705,8 +705,8 @@ body {
 .section-items .items-features .items-content h5 {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  margin: 0 0 0.5rem 0;
   font-weight: 600;
+  margin: 0 0 0.5rem 0;
   color: rgb(255, 255, 255);
 }
 .section-items .items-features .items-content p {
@@ -733,7 +733,7 @@ body {
   flex-direction: column;
   max-width: 90rem;
   margin: 0 auto;
-  gap: 40px;
+  gap: 2.5rem;
 }
 .section-example .container-example .info-example {
   max-width: 53.313rem;

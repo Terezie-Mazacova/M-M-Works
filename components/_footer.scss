@@ -4,51 +4,49 @@
     flex-direction: column;
     align-items: center;
     background-color: $dark-bg;
-    @include padding(6rem 7rem 2.5rem 7rem);
+    padding: 6rem 7rem 2.5rem 7rem;
 
     .footer-items-content {
         max-width: 90rem;
-        @include margin(0 auto);
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        @include gap(4rem);
+        gap: 4rem;
     }
 
     .footer-content {
         display: flex;
-        @include gap(4rem);
+        gap: 4rem;
         width: 100%;
         height: 29.375rem;
         justify-content: space-between;
-        
-
 
         .footer-first-part {
             display: flex;
             flex-direction: column;
-            @include gap(1.875rem);
+            gap: 1.875rem;
 
             .first-part-text {
                 display: flex;
                 flex-direction: column;
-                @include gap(1rem);
+                gap: 1rem;
 
                 .footer-contact {
                     @include text-medium;
                     color: $brand-color;
-                    @include weight(500);
+                    font-weight: 500;
                 }
 
                 h2 {
                     @include h2;
                     color: $text-inverse;
-                    @include weight(600);
+                    font-weight: 600;
                 }
     
                 p  {
                     max-width: 35.5rem;
                     @include text-medium;
-                    @include weight(400);
+                    font-weight: 400;
                     color: $text-inverse;
                 }
             }
@@ -56,11 +54,11 @@
             .footer-info {
                 display: flex;
                 flex-direction: column;
-                @include gap(1.313rem);
+                gap: 1.313rem;
                 
                 .footer-items {
                     display: flex;
-                    @include gap(0.5rem);
+                    gap: 0.5rem;
                     align-items: center;
 
                     p {
@@ -85,14 +83,14 @@
             width: 35.5rem;
             max-width: 37.5rem;
             position: relative;
-            @include padding(2rem 0 2rem 2rem);
-            @include gap(2rem);
+            padding: 2rem 0 2rem 2rem;
+            gap: 2rem;
         
             .row{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                @include gap(1.25rem);
+                gap: 1.25rem;
         
                 #name {
                     height: 2.625rem;
@@ -106,18 +104,18 @@
         
             .input-group {
                 position: relative;
-                @include padding(0.5rem 0 0 0);
+                padding: 0.5rem 0 0 0;
             
             
                 
         
                 input, textarea {
                     width: 100%;
-                    @include padding(0.625rem);
+                    padding: 0.625rem;
                     background-color: $color-ondark;
                     font-size: 15px;
                     border: none;
-                    @include radius(0.25rem);
+                    border-radius: 0.25rem;
                     color: $text-inverse;
                 }
         
@@ -125,7 +123,7 @@
                 ::placeholder {
                     color: $text-tertiary;
                     @include text-small;
-                    @include weight(400);
+                    font-weight: 400;
                 }
 
                 #email {
@@ -139,19 +137,19 @@
                     bottom: 1.563rem;
                     color: $text-inverse;
                     @include text-small;
-                    @include weight(500);
-                    @include padding(0.5rem 0 0 0);
+                    font-weight: 500;
+                    padding: 0.5rem 0 0 0;
                 }
             }
         
             button {
                 color: #fff;
                 @include text-medium;
-                @include weight(500);
+                font-weight: 500;
                 background-color: $brand-color;
                 border: none;
-                @include radius(0.25rem);
-                @include padding(1rem 2rem);
+                border-radius: 0.25rem;
+                padding: 1rem 2rem;
                 width: 100%;
                 cursor: pointer;
             }
@@ -162,18 +160,18 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        @include padding(1.5rem);
+        padding: 1.5rem;
         
         .footer-item-contact {
             display: flex;
             flex-direction: column;
-            @include gap(1rem);
+            gap: 1rem;
         }
     
         .footer-contact-list {
             display: flex;
             flex-direction: column;
-            @include gap(0.25rem);
+            gap: 0.25rem;
             width: 28.563rem;
     
             p {
@@ -186,18 +184,18 @@
         .footer-first-list {
             display: flex;
             flex-direction: column;
-            @include gap(0.75rem);
+            gap: 0.75rem;
     
             h4 {
                 @include text-large;
                 color: $text-inverse;
-                @include weight(500);
+                font-weight: 500;
             }
     
             ul {
                 display: flex;
                 flex-direction: column;
-                @include gap(0.25rem);
+                gap: 0.25rem;
                 list-style-type: none;
                 
                 a {
@@ -211,18 +209,18 @@
         .footer-second-list {
             display: flex;
             flex-direction: column;
-            @include gap(0.75rem);
+            gap: 0.75rem;
     
             h4 {
                 @include text-large;
                 color: $text-inverse;
-                @include weight(500);
+                font-weight: 500;
             }
     
             ul {
                 display: flex;
                 flex-direction: column;
-                @include gap(0.25rem);
+                gap: 0.25rem;
                 list-style-type: none;
                 
                 a {
@@ -241,12 +239,12 @@
         .footer-last-info {
             display: flex;
             justify-content: space-between;
-            @include margin(1.5rem 0 0 0);
+            margin: 1.5rem 0 0 0;
     
             .footer-frame {
                 p{
                     @include text-small;
-                    @include weight(400);
+                    font-weight: 400;
                     color: $text-quad;
                 }
             }
@@ -257,7 +255,7 @@
                 
                 p {
                     @include text-small;
-                    @include weight(400);
+                    font-weight: 400;
                     color: $text-tertiary;
                 }
     
@@ -265,7 +263,7 @@
                     align-items: center;
                     display: flex;
                     height: 0.875rem;
-                    @include margin(0.125rem 0 0 0.25rem);
+                    margin: 0.125rem 0 0 0.25rem;
                 }
             }
         }
