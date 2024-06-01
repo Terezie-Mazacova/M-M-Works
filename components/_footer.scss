@@ -18,7 +18,6 @@
         display: flex;
         gap: 4rem;
         width: 100%;
-        height: 29.375rem;
         justify-content: space-between;
 
         .footer-first-part {
@@ -81,7 +80,6 @@
             display: flex;
             flex-direction: column;
             width: 35.5rem;
-            max-width: 37.5rem;
             position: relative;
             padding: 2rem 0 2rem 2rem;
             gap: 2rem;
@@ -267,5 +265,23 @@
                 }
             }
         }
+    }
+}
+
+/*Breakpointy*/
+@media screen and (max-width: 1023px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-form {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .footer-container .footer-content .footer-form {
+        padding: 2rem 0 2rem 0;
+    }
+    
+    .footer-form button {
+        background-color: aqua;
     }
 }
