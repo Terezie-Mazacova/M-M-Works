@@ -901,4 +901,23 @@ body {
   .main-information {
     flex-direction: column;
   }
+  .section-cards {
+    padding: 6rem 2rem;
+  }
+  .section-services {
+    padding: 6rem 2rem;
+  }
+  .services-items {
+    flex-direction: column;
+  }
+  .services-text {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .services-img {
+    width: 100% !important;
+  }
+  .services-items-reverse {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
