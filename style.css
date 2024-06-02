@@ -565,7 +565,6 @@ body {
   display: flex;
   align-items: center;
   background-color: rgb(234, 237, 241);
-  height: 33rem;
 }
 .elektro-bg .main-information {
   max-width: 90rem;
@@ -573,6 +572,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4rem;
+  padding: 40px 112px 40px 112px;
 }
 .elektro-bg .main-information .elektro-features {
   max-width: 34.688rem;
@@ -600,8 +600,9 @@ body {
   line-height: 1.625rem;
   font-weight: 400;
 }
-.elektro-bg .main-information img {
+.elektro-bg .main-information .elektro-item-img img {
   border-radius: 0.75rem;
+  width: 100%;
 }
 
 /*Section Cards*/
@@ -879,5 +880,15 @@ body {
   .main-cards-div1,
   .main-cards-div2 {
     width: 100%;
+  }
+  .section-slider1 {
+    display: none;
+  }
+  .slider3 {
+    display: none; /*DOCASNE*/
+  }
+  /*Introductory Section*/
+  .main-information {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
