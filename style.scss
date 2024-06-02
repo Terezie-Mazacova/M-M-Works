@@ -234,14 +234,15 @@ body {
 
     .items-features {
         display: flex;
-        gap: 4rem;
+        gap: 2rem;
+        flex-wrap: wrap;
 
         .items-content {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
             border-radius: 0.75rem;
             padding: 1.5rem 1.5rem 2rem 1.5rem;
-            width: 100%;
+            width: calc(33.33% - 2.67rem);
             gap: 1.5rem;
             background-color: $dark-bg;
 
@@ -422,6 +423,11 @@ body {
     .elektro-item {
         flex-direction: column;
     }
+
+
+    .items-features {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width:640px) and (max-width: 1023px) {
@@ -429,7 +435,14 @@ body {
     .elektro-card {
         flex-basis: calc(50% - 0.625rem) !important;
     }
+
+    .items-features {
+        .items-content {
+            flex-basis: calc(50% - 2rem);
+        }
+    }
 }
+
 @media screen and (max-width: 1023px) {
     .main-cards {
     flex-direction: column;
@@ -458,6 +471,8 @@ body {
         padding: 6rem 2rem;
     }
 
+
+
     .section-services {
         padding: 6rem 2rem;
     }
@@ -475,5 +490,10 @@ body {
     }
     .services-items-reverse {
         flex-direction: column-reverse;
+    }
+
+
+    .section-items {
+        padding: 6rem 2rem;
     }
 }
