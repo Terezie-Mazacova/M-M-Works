@@ -540,16 +540,17 @@ body {
   justify-content: center;
   gap: 1rem;
   margin: 2.5rem 0 0 0;
+  flex-wrap: wrap;
 }
 .main-container .main-cards .main-cards-div1 {
-  width: 50%;
+  flex-basis: calc(50% - 20px);
 }
 .main-container .main-cards .main-cards-div1 img {
   width: 100%;
   border-radius: 0.75rem;
 }
 .main-container .main-cards .main-cards-div2 {
-  width: 50%;
+  flex-basis: calc(50% - 20px);
 }
 .main-container .main-cards .main-cards-div2 img {
   width: 100%;
@@ -868,4 +869,15 @@ body {
 }
 .section-application .feature-app .container-app-img {
   margin: 2.6875rem 0;
+}
+
+/*Breakpointy*/
+@media screen and (max-width: 1023px) {
+  .main-cards {
+    flex-direction: column;
+  }
+  .main-cards-div1,
+  .main-cards-div2 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
