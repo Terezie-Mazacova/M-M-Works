@@ -58,6 +58,8 @@
 /*SLIDER 2*/
 .splide2 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .splide__pagination {
@@ -384,6 +386,9 @@
 
 /*Breakpointy*/
 @media screen and (max-width: 1023px) {
+  .footer-container {
+    padding: 6rem 2rem;
+  }
   .footer-content {
     flex-direction: column;
   }
@@ -695,12 +700,12 @@ body {
   display: flex;
   align-items: center;
   padding: 6rem 0;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 .section-items .content-items-info {
   display: flex;
   flex-direction: column;
-  max-width: 90rem;
-  margin: 0 auto;
 }
 .section-items h2 {
   font-size: 2.5rem;
@@ -881,6 +886,9 @@ body {
   .items-features {
     flex-direction: column;
   }
+  .items-features .items-content {
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
   .elektro-card {
@@ -929,5 +937,14 @@ body {
   }
   .section-items {
     padding: 6rem 2rem;
+  }
+  .section-example {
+    padding: 6rem 2rem;
+  }
+  .section-aboutus {
+    padding: 6rem 2rem;
+  }
+  .section-aboutus .container-info {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */

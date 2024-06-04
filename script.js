@@ -23,7 +23,17 @@ document.addEventListener( 'DOMContentLoaded', function() {
             interval: 2000,
             speed: 900,
             arrows: false,
-            pagination: true
+            pagination: true,
+            breakpoints: {
+                600: {
+                    perPage: 2,
+                    gap: '1rem',
+                },
+                480: {
+                    perPage: 1,
+                    gap: '1rem',
+                },
+            },
         });
         splide2.mount();
     }

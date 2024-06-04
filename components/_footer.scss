@@ -270,6 +270,10 @@
 
 /*Breakpointy*/
 @media screen and (max-width: 1023px) {
+    .footer-container {
+        padding: 6rem 2rem;
+    }
+
     .footer-content {
         flex-direction: column;
     }

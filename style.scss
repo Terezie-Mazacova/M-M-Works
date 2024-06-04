@@ -219,12 +219,12 @@ body {
     display: flex;
     align-items: center;
     padding: 6rem 0;
+    max-width: 90rem;
+    margin: 0 auto;
 
     .content-items-info {
         display: flex;
         flex-direction: column;
-        max-width: 90rem;
-        margin: 0 auto;
     }
 
     h2 {
@@ -427,6 +427,9 @@ body {
 
     .items-features {
         flex-direction: column;
+        .items-content {
+            width: 100% !important;
+        }
     }
 }
 
@@ -496,4 +499,20 @@ body {
     .section-items {
         padding: 6rem 2rem;
     }
+
+
+    .section-example {
+        padding: 6rem 2rem;
+    }
+
+
+
+    .section-aboutus {
+        padding: 6rem 2rem;
+
+        .container-info {
+            width: 100% !important;
+        }
+    }
+    
 }
