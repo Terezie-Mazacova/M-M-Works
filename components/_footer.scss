@@ -160,24 +160,25 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 1.5rem;
         
         .footer-item-contact {
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            width: 40%;
+            padding: 1.5rem;
         }
     
         .footer-contact-list {
             display: flex;
             flex-direction: column;
             gap: 0.25rem;
-            width: 28.563rem;
     
             p {
                 color: $text-quad;
                 @include text-small;
                 cursor: pointer;
+                white-space: nowrap;
             }
         }
     
@@ -185,6 +186,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
+            padding: 1.5rem;
     
             h4 {
                 @include text-large;
@@ -210,6 +212,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
+            padding: 1.5rem;
     
             h4 {
                 @include text-large;
@@ -265,16 +268,53 @@
                     height: 0.875rem;
                     margin: 0.125rem 0 0 0.25rem;
                 }
+
+                .footer-last-name {
+                    text-decoration: none;
+
+                    p {
+                        font-weight: 500;
+                        color: $text-quad;
+                    }
+                }
             }
         }
     }
 }
 
 /*Breakpointy*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
+    .footer-container {
+        padding: 4rem 1rem;
+    }
+
+    .footer-item-contact {
+        padding: 1.5rem 0 !important;
+    }
+
+    .footer-first-list {
+        padding: 1.5rem 0 !important;
+    }
+
+    .footer-second-list {
+        padding: 1.5rem 0 !important;
+    }
+
+
+    .footer-last-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .footer-container {
         padding: 6rem 2rem;
     }
+}
+
+@media screen and (max-width: 1023px) {
 
     .footer-content {
         flex-direction: column;
