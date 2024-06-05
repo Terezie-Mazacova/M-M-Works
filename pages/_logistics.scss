@@ -58,3 +58,14 @@
     }
 }
 
+
+/*Breakpointy*/
+@media screen and (max-width: 1023px) {
+    .services-items-logistika {
+        width: 100%;
+    }
+
+    .items-logistika-reverse {
+        flex-direction: column-reverse !important;
+    }
+}

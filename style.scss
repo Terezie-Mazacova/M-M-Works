@@ -108,6 +108,8 @@ body {
         }
 
         .elektro-item-img {
+            width: 100%;
+
             img {
                 border-radius: 0.75rem;
                 width: 100%;
@@ -424,6 +426,11 @@ body {
 
         .container-app-img {
             margin: 2.6875rem 0;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -453,6 +460,22 @@ body {
         .items-content {
             flex-basis: calc(50% - 2rem);
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-application {
+        padding: 4rem 1rem;
+    }
+
+    .container-app {
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-application {
+        padding: 6rem 2rem;
     }
 }
 
@@ -538,6 +561,20 @@ body {
 
         .container-info {
             width: 100% !important;
+        }
+    }
+
+
+    .feature-app {
+        flex-direction: column;
+        padding: 0 !important;
+
+        .container-app {
+            padding: 1rem 2rem;
+        }
+
+        .container-app-img {
+            padding-left: 1rem;
         }
     }
     

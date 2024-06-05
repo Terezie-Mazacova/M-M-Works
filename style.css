@@ -141,6 +141,15 @@
   line-height: 1.5rem !important;
 }
 
+/*Breakpointy*/
+@media screen and (max-width: 1023px) {
+  .services-items-logistika {
+    width: 100%;
+  }
+  .items-logistika-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
 /*Footer*/
 .footer-container {
   display: flex;
@@ -642,6 +651,9 @@ body {
   line-height: 1.625rem;
   font-weight: 400;
 }
+.elektro-bg .main-information .elektro-item-img {
+  width: 100%;
+}
 .elektro-bg .main-information .elektro-item-img img {
   border-radius: 0.75rem;
   width: 100%;
@@ -923,6 +935,10 @@ body {
 }
 .section-application .feature-app .container-app-img {
   margin: 2.6875rem 0;
+  width: 100%;
+}
+.section-application .feature-app .container-app-img img {
+  width: 100%;
 }
 
 /*Breakpointy*/
@@ -943,6 +959,19 @@ body {
   }
   .items-features .items-content {
     flex-basis: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-application {
+    padding: 4rem 1rem;
+  }
+  .container-app {
+    padding: 4rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section-application {
+    padding: 6rem 2rem;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1003,5 +1032,15 @@ body {
   }
   .section-aboutus .container-info {
     width: 100% !important;
+  }
+  .feature-app {
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  .feature-app .container-app {
+    padding: 1rem 2rem;
+  }
+  .feature-app .container-app-img {
+    padding-left: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
