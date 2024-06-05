@@ -151,6 +151,7 @@
 }
 .footer-container .footer-items-content {
   max-width: 90rem;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -215,6 +216,7 @@
 .footer-container .footer-content .footer-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
   width: 35.5rem;
   position: relative;
   padding: 2rem 0 2rem 2rem;
@@ -397,9 +399,13 @@
   }
   .footer-container .footer-content .footer-form {
     padding: 2rem 0 2rem 0;
+    width: 100%;
   }
   .footer-form button {
     background-color: aqua;
+  }
+  .footer-second-part {
+    flex-direction: column;
   }
 }
 /* HEADER */
@@ -622,6 +628,7 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   gap: 2.5rem;
+  width: 100%;
 }
 .section-cards .elektro-cards h2 {
   font-size: 2.5rem;
@@ -765,6 +772,7 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   gap: 2.5rem;
+  width: 100%;
 }
 .section-example .container-example .info-example {
   max-width: 53.313rem;
@@ -899,6 +907,16 @@ body {
   }
 }
 @media screen and (max-width: 1023px) {
+  .main-information {
+    padding: 6rem 2rem !important;
+    width: 100%;
+  }
+  .elektro-features {
+    width: 100%;
+  }
+  .elektro-features h1 {
+    font-size: 1.5rem !important;
+  }
   .main-cards {
     flex-direction: column;
   }

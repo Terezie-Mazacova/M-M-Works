@@ -8,6 +8,7 @@
 
     .footer-items-content {
         max-width: 90rem;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -79,6 +80,7 @@
         .footer-form {
             display: flex;
             flex-direction: column;
+            width: 100%;
             width: 35.5rem;
             position: relative;
             padding: 2rem 0 2rem 2rem;
@@ -283,9 +285,14 @@
 
     .footer-container .footer-content .footer-form {
         padding: 2rem 0 2rem 0;
+        width: 100%;
     }
     
     .footer-form button {
         background-color: aqua;
+    }
+
+    .footer-second-part {
+        flex-direction: column;
     }
 }
