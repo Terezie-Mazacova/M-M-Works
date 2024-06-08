@@ -19,6 +19,7 @@ body {
     font-family: 'Golos Text', sans-serif;
 }
 
+
 /*Introductory Main Content*/
 .main-container {
     background-color: $brand-light;
@@ -31,36 +32,99 @@ body {
         margin: 0 auto;
     }
 
-    .main-cards {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin: 2.5rem 0 0 0;
-        flex-wrap: wrap;
-
-        .main-cards-div1 {
-            flex-basis: calc(50% - 20px);
-        
-            img {
-                width: 100%;
-                border-radius: 0.75rem;
-            }
-            
-        }
-        
-        .main-cards-div2 {
-            flex-basis: calc(50% - 20px);
-        
-            img {
-                width: 100%;
-                border-radius: 0.75rem;
-            }
-        }
-    }
-
     .main-splide-content {
         margin: 0 0 6rem 0;
     }
+}
+
+.main-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2.5rem;
+
+    .main-cards {
+        position: relative;
+        width: 100%;
+
+        .main-card-bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(32, 41, 55, 0.7);
+            border-radius: .75rem;
+        }
+
+        .main-card-img {
+            img {
+                display: block;
+                margin: auto;
+                width: 100%; 
+                height: auto; 
+                object-fit: cover;
+                border-radius: .75rem;
+            }
+            
+        }
+
+        .main-logo-img {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            z-index: 4;
+            justify-content: center;
+            display: flex;
+            margin: auto;
+            width: 100%;
+
+            img {
+                height: 50%;
+                width: 50%;
+            }
+        }
+
+        .main-content-btn {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(32, 41, 55, 0.95);
+            opacity: 0;
+            transition: opacity 0.6s, transform 0.6s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:hover > *{
+                transform: translateY(0);
+            }
+
+            button {
+                position: absolute;
+                bottom: 35%;
+                padding: 16px 32px;
+                border: none;
+                border-radius: 4px;
+                background-color: rgba(249, 115, 22, 1);
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.main-content-btn > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
 }
 
 /*Introductory Section*/
@@ -326,6 +390,7 @@ body {
         display: flex;
         max-width: 90rem;
         margin: 0 auto;
+        gap: 4rem;
 
         .container-info {
             width: 50%;
@@ -509,9 +574,6 @@ body {
         display: none;
     }
 
-    .slider3 {
-        display: none; /*DOCASNE*/
-    }
 
     /*Introductory Section*/
     .main-information {
@@ -576,6 +638,10 @@ body {
         .container-app-img {
             padding-left: 1rem;
         }
+    }
+
+    .container-aboutus {
+        flex-direction: column;
     }
     
 }
