@@ -3,6 +3,7 @@
 .main-splide-content {
     max-width: 90rem;
     margin: 0 auto;
+    width: 100%;
 }
 .section-slider1 {
     display: flex;
@@ -85,8 +86,29 @@
     padding: 20px;
 }
 
+
+@media screen and (min-width: 1280px) {
+    .section-slider {
+        padding: 0 3rem;
+    }
+
+    .section-slider1 {
+        padding: 4rem 3rem 2.5rem 3rem;
+    }
+}
+
 @media screen and (max-width: 1279px) {
     .section-slider {
+        display: none;
+    }
+
+    .section-slider1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .slider3 {
         display: none;
     }
 }

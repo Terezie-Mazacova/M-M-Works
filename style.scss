@@ -34,6 +34,7 @@ body {
 
     .main-splide-content {
         margin: 0 0 6rem 0;
+        width: 100%;
     }
 }
 
@@ -535,12 +536,40 @@ body {
     }
 
 
+    .main-information {
+        padding: 2rem 1rem !important;
+
+        .elektro-features {
+            max-width: 100% !important;
+        }
+    }
+
+    .section-cards {
+        padding: 2rem 1rem;
+    }
+
+    .section-services {
+        padding: 2rem 1rem;
+    }
+
+    .section-items {
+        padding: 2rem 1rem;
+    }
+
+    .section-example {
+        padding: 2rem 1rem;
+    }
+
+    .section-aboutus {
+        padding: 2rem 1rem;
+    }
+
     .section-application {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .container-app {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
     }
 }
 
@@ -548,6 +577,51 @@ body {
     .main-wrapper {
         padding: 2.5rem 2rem;
     }
+
+    .main-information {
+        padding: 2.5rem 2rem !important;
+
+        .elektro-features {
+            max-width: 100% !important;
+        }
+        
+    }
+
+    .section-cards {
+        padding: 6rem 2rem;
+    }
+
+    .section-services {
+        padding: 6rem 2rem;
+    }
+
+    .section-items {
+        padding: 6rem 2rem;
+    }
+
+    .section-example {
+        padding: 6rem 2rem;
+    }
+
+    .section-aboutus {
+        padding: 6rem 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .section-application {
         padding: 6rem 2rem;
@@ -557,13 +631,6 @@ body {
 @media screen and (max-width: 1023px) {
     .main-wrapper {
         flex-direction: column;
-    }
-
-
-
-    .main-information {
-        padding: 6rem 2rem !important;
-        width: 100%;
     }
 
 
@@ -597,15 +664,11 @@ body {
     }
 
 
-    .section-cards {
-        padding: 6rem 2rem;
-    }
+    
 
 
 
-    .section-services {
-        padding: 6rem 2rem;
-    }
+    
     .services-items {
         flex-direction: column;
     }
@@ -623,20 +686,14 @@ body {
     }
 
 
-    .section-items {
-        padding: 6rem 2rem;
-    }
+    
 
 
-    .section-example {
-        padding: 6rem 2rem;
-    }
+    
 
 
 
     .section-aboutus {
-        padding: 6rem 2rem;
-
         .container-info {
             width: 100% !important;
         }
@@ -662,12 +719,45 @@ body {
     
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px){
     .main-wrapper {
         padding: 2.5rem 3rem;
     }
 
-    .section-slider {
-        padding: 0 3rem;
+    
+
+
+    .main-information {
+        padding: 2rem 3rem !important;
+
+        .elektro-features {
+            max-width: 100% !important;
+        }
     }
+
+    .section-cards {
+        padding: 6rem 3rem;
+    }
+
+    .section-services {
+        padding: 6rem 3rem;
+    }
+
+    .section-items {
+        padding: 6rem 3rem;
+    }
+
+    .section-example {
+        padding: 6rem 3rem;
+    }
+
+    .section-aboutus {
+        padding: 6rem 3rem;
+    }
+
+
+
+
+
+
 }
