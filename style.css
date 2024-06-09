@@ -165,11 +165,18 @@
 
 /*Breakpointy*/
 @media screen and (max-width: 1023px) {
+  .main-info-logistics {
+    gap: 0 !important;
+  }
   .services-items-logistika {
     width: 100%;
+    padding: 0;
   }
   .items-logistika-reverse {
     flex-direction: column-reverse !important;
+  }
+  .services-logistika.p-l-56 {
+    padding: 0 !important;
   }
 }
 /*Footer*/
@@ -1160,7 +1167,7 @@ body {
     padding: 0 !important;
   }
   .feature-app .container-app {
-    padding: 1rem 2rem;
+    padding: 1.25rem;
   }
   .feature-app .container-app-img {
     padding-left: 1rem;
@@ -1193,5 +1200,11 @@ body {
   }
   .section-aboutus {
     padding: 6rem 3rem;
+  }
+  .section-application {
+    padding: 6rem 3rem;
+  }
+  .section-application .container-app {
+    padding: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */

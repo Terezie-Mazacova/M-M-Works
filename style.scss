@@ -608,21 +608,6 @@ body {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .section-application {
         padding: 6rem 2rem;
     }
@@ -705,7 +690,7 @@ body {
         padding: 0 !important;
 
         .container-app {
-            padding: 1rem 2rem;
+            padding: 1.25rem;
         }
 
         .container-app-img {
@@ -755,9 +740,11 @@ body {
         padding: 6rem 3rem;
     }
 
+    .section-application {
+        padding: 6rem 3rem;
 
-
-
-
-
+        .container-app {
+            padding: 3rem;
+        }
+    }
 }

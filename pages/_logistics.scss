@@ -61,11 +61,21 @@
 
 /*Breakpointy*/
 @media screen and (max-width: 1023px) {
+    .main-info-logistics {
+        gap: 0 !important;
+    }
+
+
     .services-items-logistika {
         width: 100%;
+        padding: 0;
     }
 
     .items-logistika-reverse {
         flex-direction: column-reverse !important;
+    }
+
+    .services-logistika.p-l-56 {
+        padding: 0 !important;
     }
 }
