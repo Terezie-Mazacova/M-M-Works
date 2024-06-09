@@ -84,3 +84,9 @@
     background-color: green;
     padding: 20px;
 }
+
+@media screen and (max-width: 1279px) {
+    .section-slider {
+        display: none;
+    }
+}

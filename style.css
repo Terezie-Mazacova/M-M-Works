@@ -90,6 +90,11 @@
   padding: 20px;
 }
 
+@media screen and (max-width: 1279px) {
+  .section-slider {
+    display: none;
+  }
+}
 /*Section About Transportation*/
 .services-items-logistika {
   width: 50%;
@@ -560,6 +565,16 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-wrapper {
+    margin: 0 1rem !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-wrapper {
+    margin: 0 2rem !important;
+  }
+}
 @media screen and (max-width: 1023px) {
   .header-nav {
     display: none;
@@ -597,6 +612,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding-top: 2.5rem;
+  padding-bottom: 4rem;
 }
 .main-wrapper .main-cards {
   position: relative;
@@ -1021,6 +1037,9 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .main-wrapper {
+    padding: 2.5rem 1rem;
+  }
   .section-application {
     padding: 4rem 1rem;
   }
@@ -1029,11 +1048,17 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-wrapper {
+    padding: 2.5rem 2rem;
+  }
   .section-application {
     padding: 6rem 2rem;
   }
 }
 @media screen and (max-width: 1023px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
   .main-information {
     padding: 6rem 2rem !important;
     width: 100%;
@@ -1101,5 +1126,13 @@ body {
   }
   .container-aboutus {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .main-wrapper {
+    padding: 2.5rem 3rem;
+  }
+  .section-slider {
+    padding: 0 3rem;
   }
 }/*# sourceMappingURL=style.css.map */

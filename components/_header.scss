@@ -118,9 +118,21 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .header-wrapper {
+        margin: 0 1rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-wrapper {
+        margin: 0 2rem !important;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .header-nav {
         display: none;
     }
-    
 }
