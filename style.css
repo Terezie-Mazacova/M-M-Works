@@ -112,6 +112,17 @@
     display: none;
   }
 }
+.main-content-logistics {
+  width: 50%;
+}
+
+.img-item-logistics {
+  width: 50% !important;
+}
+.img-item-logistics img {
+  width: auto !important;
+}
+
 /*Section About Transportation*/
 .services-items-logistika {
   width: 50%;
@@ -164,6 +175,14 @@
 }
 
 /*Breakpointy*/
+@media screen and (max-width: 1279px) {
+  .img-item-logistics {
+    width: 100% !important;
+  }
+  .img-item-logistics img {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 1023px) {
   .main-info-logistics {
     gap: 0 !important;
@@ -723,6 +742,7 @@ body {
   align-items: center;
   gap: 4rem;
   padding: 40px 112px 40px 112px;
+  width: 100%;
 }
 .elektro-bg .main-information .elektro-features {
   max-width: 34.688rem;

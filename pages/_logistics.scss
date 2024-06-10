@@ -1,3 +1,16 @@
+.main-content-logistics {
+    width: 50%;
+}
+
+.img-item-logistics {
+    width: 50% !important;
+
+    img {
+        width: auto !important;
+    }
+}
+
+
 
 /*Section About Transportation*/
 .services-items-logistika {
@@ -60,7 +73,18 @@
 
 
 /*Breakpointy*/
+@media screen and (max-width: 1279px) {
+    .img-item-logistics {
+        width: 100% !important;
+
+        img {
+            width: 100% !important;
+        }
+    }
+}
+
 @media screen and (max-width: 1023px) {
+
     .main-info-logistics {
         gap: 0 !important;
     }
