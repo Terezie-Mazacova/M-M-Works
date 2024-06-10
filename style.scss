@@ -20,6 +20,7 @@ body {
 }
 
 
+
 /*Introductory Main Content*/
 .main-container {
     background-color: $brand-light;
@@ -532,6 +533,28 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+    }
+
+    h4 {
+        font-size: 1.25rem !important;
+        line-height: 1.5rem !important;
+    }
+
+
+    h5 {
+        font-size: 1rem !important;
+        line-height: 1.25rem !important;
+    }
+
+
     .main-wrapper {
         padding: 2.5rem 1rem;
     }
@@ -622,10 +645,6 @@ body {
 
     .elektro-features {
         width: 100%;
-
-        h1 {
-            font-size: 1.5rem !important;
-        }
     }
 
 
