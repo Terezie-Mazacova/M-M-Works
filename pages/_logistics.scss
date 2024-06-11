@@ -13,11 +13,11 @@
 
 
 /*Section About Transportation*/
-.services-items-logistika {
+.services-items-logistics {
     width: 50%;
     padding-right: 3.5rem;
     
-    .services-logistika {
+    .services-logistics {
         
         ul {
             display: flex;
@@ -25,7 +25,7 @@
             gap: 1rem;
             margin: 2.5rem 0 0 0;
 
-            .services-logistika-list {
+            .services-logistics-list {
                 display: flex;
                 gap: 0.75rem;
             }
@@ -44,17 +44,17 @@
     
 }
 
-.services-logistika-feature {
+.services-logistics-feature {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.services-logistika-item {
+.services-logistics-item {
     margin: 0 0 0 1.875rem;
 }
 
-.services-logistika-container {
+.services-logistics-container {
     display: flex;
     align-items: center;
     background-color: $brand-light;
@@ -90,16 +90,16 @@
     }
 
 
-    .services-items-logistika {
+    .services-items-logistics {
         width: 100%;
         padding: 0;
     }
 
-    .items-logistika-reverse {
+    .items-logistics-reverse {
         flex-direction: column-reverse !important;
     }
 
-    .services-logistika.p-l-56 {
+    .services-logistics.p-l-56 {
         padding: 0 !important;
     }
 }

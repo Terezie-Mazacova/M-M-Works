@@ -78,17 +78,38 @@
   display: flex;
   justify-content: flex-end; /* Zarovná slidy na pravou stranu */
 }
-
-.slider3 img {
-  height: 280px;
+.slider3 .splide3-human img {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .slide-caption {
-  background-color: green;
-  padding: 20px;
+  background-color: rgb(56, 65, 80);
+  padding: 1.5rem 1rem 1.25rem 1.25rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.slide-caption .splide-info-job {
+  color: rgb(249, 115, 22);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+.slide-caption h4 {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0.25rem;
+}
+.slide-caption p {
+  color: rgb(156, 163, 175);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 1280px) {
@@ -124,41 +145,41 @@
 }
 
 /*Section About Transportation*/
-.services-items-logistika {
+.services-items-logistics {
   width: 50%;
   padding-right: 3.5rem;
 }
-.services-items-logistika .services-logistika ul {
+.services-items-logistics .services-logistics ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin: 2.5rem 0 0 0;
 }
-.services-items-logistika .services-logistika ul .services-logistika-list {
+.services-items-logistics .services-logistics ul .services-logistics-list {
   display: flex;
   gap: 0.75rem;
 }
-.services-items-logistika .services-logistika ul li {
+.services-items-logistics .services-logistics ul li {
   list-style-type: none;
 }
-.services-items-logistika .services-logistika ul li p {
+.services-items-logistics .services-logistics ul li p {
   color: rgb(56, 65, 80);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
 }
 
-.services-logistika-feature {
+.services-logistics-feature {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.services-logistika-item {
+.services-logistics-item {
   margin: 0 0 0 1.875rem;
 }
 
-.services-logistika-container {
+.services-logistics-container {
   display: flex;
   align-items: center;
   background-color: rgb(234, 237, 241);
@@ -167,7 +188,7 @@
   margin: 1.5rem 0 0 0;
   gap: 0.75rem;
 }
-.services-logistika-container p {
+.services-logistics-container p {
   color: rgb(56, 65, 80) !important;
   font-weight: 400 !important;
   font-size: 1rem !important; /*uz zoufalost*/
@@ -187,14 +208,14 @@
   .main-info-logistics {
     gap: 0 !important;
   }
-  .services-items-logistika {
+  .services-items-logistics {
     width: 100%;
     padding: 0;
   }
-  .items-logistika-reverse {
+  .items-logistics-reverse {
     flex-direction: column-reverse !important;
   }
-  .services-logistika.p-l-56 {
+  .services-logistics.p-l-56 {
     padding: 0 !important;
   }
 }
@@ -875,6 +896,7 @@ body {
 .section-items .content-items-info {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .section-items h2 {
   font-size: 2.5rem;
@@ -999,6 +1021,10 @@ body {
 
 .mr-6 {
   margin-right: 0.375rem;
+}
+
+.m-t-4 {
+  margin-top: 0.25rem;
 }
 
 /*padding-left*/
@@ -1223,9 +1249,6 @@ body {
     padding: 6rem 3rem;
   }
   .section-services {
-    padding: 6rem 3rem;
-  }
-  .section-items {
     padding: 6rem 3rem;
   }
   .section-example {

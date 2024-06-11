@@ -296,6 +296,7 @@ body {
     .content-items-info {
         display: flex;
         flex-direction: column;
+        width: 100%
     }
 
     h2 {
@@ -432,6 +433,10 @@ body {
 
 .mr-6 {
     margin-right: .375rem;
+}
+
+.m-t-4 {
+    margin-top: .25rem;
 }
 
 /*padding-left*/
@@ -745,10 +750,6 @@ body {
     }
 
     .section-services {
-        padding: 6rem 3rem;
-    }
-
-    .section-items {
         padding: 6rem 3rem;
     }
 
