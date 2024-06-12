@@ -325,6 +325,10 @@
   border-radius: 0.25rem;
   color: rgb(255, 255, 255);
 }
+.footer-container .footer-content .footer-form .input-group input:focus, .footer-container .footer-content .footer-form .input-group input:active, .footer-container .footer-content .footer-form .input-group input:hover, .footer-container .footer-content .footer-form .input-group textarea:focus, .footer-container .footer-content .footer-form .input-group textarea:active, .footer-container .footer-content .footer-form .input-group textarea:hover {
+  border: 2px solid rgb(209, 213, 219);
+  outline: none;
+}
 .footer-container .footer-content .footer-form .input-group ::-moz-placeholder {
   color: rgb(107, 114, 128);
   font-size: 0.875rem;
@@ -362,6 +366,13 @@
   padding: 1rem 2rem;
   width: 100%;
   cursor: pointer;
+}
+.footer-container .footer-content .footer-form button:hover {
+  background-color: rgba(249, 115, 22, 0.8);
+}
+.footer-container .footer-content .footer-form button:focus, .footer-container .footer-content .footer-form button:active {
+  border: 1px solid rgb(70, 143, 254);
+  box-shadow: 0px 0px 0px 3px rgb(70, 143, 254);
 }
 .footer-container .footer-second-part {
   display: flex;
