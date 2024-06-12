@@ -547,6 +547,10 @@
   color: rgb(56, 65, 80);
   text-decoration: none;
 }
+.header-container .header-wrapper .header-nav a:hover, .header-container .header-wrapper .header-nav a:focus, .header-container .header-wrapper .header-nav a:active {
+  color: rgb(15, 19, 26);
+  text-decoration: underline;
+}
 .header-container .header-wrapper .header-list {
   display: flex;
   gap: 0.5rem;
@@ -560,6 +564,15 @@
   align-items: center;
   border-radius: 0.25rem;
   border: 1px solid rgb(209, 213, 219);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 2px 0px rgb(241, 241, 241);
+}
+.header-container .header-wrapper .header-list .header-btn button:hover {
+  background-color: rgb(234, 237, 241);
+}
+.header-container .header-wrapper .header-list .header-btn button:focus, .header-container .header-wrapper .header-list .header-btn button:active {
+  border: 1px solid rgb(70, 143, 254);
+  box-shadow: 0px 0px 0px 3px rgb(70, 143, 254);
   background-color: rgb(255, 255, 255);
 }
 .header-container .header-wrapper .header-list .header-btn p {
@@ -579,9 +592,12 @@
   padding: 0.5rem 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  cursor: pointer;
 }
-.header-container .header-wrapper .header-list .dropdown .select:hover, .header-container .header-wrapper .header-list .dropdown .select:active {
-  background-color: aqua;
+.header-container .header-wrapper .header-list .dropdown .select:focus, .header-container .header-wrapper .header-list .dropdown .select:active {
+  border: 1px solid rgb(70, 143, 254);
+  box-shadow: 0px 0px 0px 3px rgb(70, 143, 254);
+  background-color: rgb(255, 255, 255);
 }
 .header-container .header-wrapper .header-list .dropdown .caret {
   width: 0;

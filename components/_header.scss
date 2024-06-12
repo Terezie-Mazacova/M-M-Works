@@ -27,6 +27,13 @@
                         @include text-medium;
                         color: $text-secondary;
                         text-decoration: none;
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: $text-primary;
+                            text-decoration: underline;
+                        }
                     }
         }
 
@@ -37,7 +44,19 @@
             .header-btn {
                 button {
                     @include contact-btn;
+
+                    &:hover {
+                        background-color: $brand-light;
+                    }
+
+                    &:focus,
+                    &:active {
+                        border: 1px solid rgba(70, 143, 254, 1);
+                        box-shadow: 0px 0px 0px 3px rgba(70, 143, 254, 1);
+                        background-color: $text-inverse;
+                    }
                 }
+
                     p {
                         @include text-medium;
                         font-weight: 500;
@@ -55,10 +74,13 @@
                     align-items: center;
                     padding: 0.5rem 1rem;
                     @include text-medium;
-            
-                    &:hover,
+                    cursor: pointer;
+
+                    &:focus,
                     &:active {
-                        background-color: aqua;
+                        border: 1px solid rgba(70, 143, 254, 1);
+                        box-shadow: 0px 0px 0px 3px rgba(70, 143, 254, 1);
+                        background-color: $text-inverse;
                     }
                 }
                 
