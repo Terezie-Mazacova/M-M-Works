@@ -179,6 +179,12 @@
                 @include text-small;
                 cursor: pointer;
                 white-space: nowrap;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $text-inverse;
+                }
             }
         }
     
@@ -199,12 +205,17 @@
                 flex-direction: column;
                 gap: 0.25rem;
                 list-style-type: none;
-                
-                a {
-                    text-decoration: none;
-                    @include text-small;
-                    color: $text-quad;
+
+                li {
+                    p {
+                        
+                        @include text-small;
+                        color: $text-quad;
+                        font-weight: 400;
+                    }
                 }
+                
+                
             }
         }
     
@@ -230,6 +241,12 @@
                     text-decoration: none;
                     @include text-small;
                     color: $text-quad;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $text-inverse;
+                    }
                 }
             }
         }
