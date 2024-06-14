@@ -1122,9 +1122,11 @@ body {
 
 /*Breakpointy*/
 @media screen and (max-width: 639px) {
+  /*Introductory Section*/
   .elektro-item {
     flex-direction: column;
   }
+  /*Section About Why-M&M*/
   .items-features {
     flex-direction: column;
   }
@@ -1133,9 +1135,11 @@ body {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
+  /*Section Cards*/
   .elektro-card {
     flex-basis: calc(50% - 0.625rem) !important;
   }
+  /*Section About Why-M&M*/
   .items-features .items-content {
     flex-basis: calc(50% - 2rem);
   }
@@ -1157,80 +1161,96 @@ body {
     font-size: 1rem !important;
     line-height: 1.25rem !important;
   }
+  /*Introductory Main Content*/
   .main-wrapper {
     padding: 2.5rem 1rem;
   }
+  /*Introductory Section*/
   .main-information {
     padding: 2rem 1rem !important;
   }
   .main-information .elektro-features {
     max-width: 100% !important;
   }
+  /*Section Cards*/
   .section-cards {
     padding: 2rem 1rem;
   }
+  /*Section About Operation*/
   .section-services {
     padding: 2rem 1rem;
   }
+  /*Section About Why-M&M*/
   .section-items {
     padding: 2rem 1rem;
   }
+  /*Section About Examples*/
   .section-example {
     padding: 2rem 1rem;
   }
+  /*Section About Us*/
   .section-aboutus {
     padding: 2rem 1rem;
   }
+  /*Section About M&M-App*/
   .section-application {
     padding: 2rem 1rem;
   }
-  .container-app {
-    padding: 2rem 1rem;
+  .section-application .container-app {
+    padding: 2rem 1rem !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*Introductory Main Content*/
   .main-wrapper {
     padding: 2.5rem 2rem;
   }
+  /*Introductory Section*/
   .main-information {
     padding: 2.5rem 2rem !important;
   }
   .main-information .elektro-features {
     max-width: 100% !important;
   }
+  /*Section Cards*/
   .section-cards {
     padding: 6rem 2rem;
   }
+  /*Section About Operation*/
   .section-services {
     padding: 6rem 2rem;
   }
+  /*Section About Why-M&M*/
   .section-items {
     padding: 6rem 2rem;
   }
+  /*Section About Examples*/
   .section-example {
     padding: 6rem 2rem;
   }
+  /*Section About Us*/
   .section-aboutus {
     padding: 6rem 2rem;
   }
+  /*Section About M&M-App*/
   .section-application {
     padding: 6rem 2rem;
   }
 }
 @media screen and (max-width: 1023px) {
+  /*Introductory Main Content*/
   .main-wrapper {
     flex-direction: column;
   }
+  /*Introductory Section*/
   .elektro-features {
     width: 100%;
   }
+  /*Introductory Main Content*/
   .main-cards {
     flex-direction: column;
   }
-  .main-cards-div1,
-  .main-cards-div2 {
-    width: 100%;
-  }
+  /*Slider1 in Electrical-Installation*/
   .section-slider1 {
     display: none;
   }
@@ -1238,22 +1258,28 @@ body {
   .main-information {
     flex-direction: column;
   }
+  /*Section About Operation*/
   .services-items {
     flex-direction: column;
   }
-  .services-text {
+  .services-items .services-text {
     width: 100% !important;
     padding: 0 !important;
   }
-  .services-img {
+  .services-items .services-img {
     width: 100% !important;
   }
   .services-items-reverse {
     flex-direction: column-reverse;
   }
-  .section-aboutus .container-info {
+  /*Section About Us*/
+  .section-aboutus .container-aboutus {
+    flex-direction: column;
+  }
+  .section-aboutus .container-aboutus .container-info {
     width: 100% !important;
   }
+  /*Section About M&M-App*/
   .feature-app {
     flex-direction: column;
     padding: 0 !important;
@@ -1264,32 +1290,36 @@ body {
   .feature-app .container-app-img {
     padding-left: 1rem;
   }
-  .container-aboutus {
-    flex-direction: column;
-  }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  /*Introductory Main Content*/
   .main-wrapper {
     padding: 2.5rem 3rem;
   }
+  /*Introductory Section*/
   .main-information {
     padding: 2rem 3rem !important;
   }
   .main-information .elektro-features {
     max-width: 100% !important;
   }
+  /*Section Cards*/
   .section-cards {
     padding: 6rem 3rem;
   }
+  /*Section About Operation*/
   .section-services {
     padding: 6rem 3rem;
   }
+  /*Section About Examples*/
   .section-example {
     padding: 6rem 3rem;
   }
+  /*Section About Us*/
   .section-aboutus {
     padding: 6rem 3rem;
   }
+  /*Section About M&M-App*/
   .section-application {
     padding: 6rem 3rem;
   }

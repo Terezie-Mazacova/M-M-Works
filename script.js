@@ -1,4 +1,4 @@
-/* Slider s logy na uvodni strance webu */
+/*Slider*/
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide1 = new Splide( '.slider1', {
         perPage: 6,
@@ -59,7 +59,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
         },
     });
     splide3.mount();
-
 } );
 
 /*Dropdown*/
@@ -93,4 +92,3 @@ dropdowns.forEach(dropdown => {
         });
     });
 });
-
