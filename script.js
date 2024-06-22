@@ -75,6 +75,7 @@ dropdowns.forEach(dropdown => {
     select.addEventListener('click', () => {
         caret.classList.toggle('caret-rotate');
         menu.classList.toggle('menu-open');
+        select.classList.toggle('is-active');
     });
 
     options.forEach(option => {
