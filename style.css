@@ -941,14 +941,13 @@ body {
 .section-items .items-features {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 .section-items .items-features .items-content {
   display: flex;
   flex-direction: column;
   border-radius: 0.75rem;
   padding: 1.5rem 1.5rem 2rem 1.5rem;
-  width: calc(33.33% - 2.67rem);
+  width: 33.33%;
   gap: 1.5rem;
   background-color: rgb(32, 41, 55);
 }
@@ -1186,6 +1185,10 @@ body {
   .section-items {
     padding: 2rem 1rem;
   }
+  .section-items .items-features {
+    display: flex;
+    flex-wrap: wrap !important;
+  }
   /*Section About Examples*/
   .section-example {
     padding: 2rem 1rem;
@@ -1225,6 +1228,10 @@ body {
   /*Section About Why-M&M*/
   .section-items {
     padding: 6rem 2rem;
+  }
+  .section-items .items-features {
+    display: flex;
+    flex-wrap: wrap !important;
   }
   /*Section About Examples*/
   .section-example {
@@ -1311,6 +1318,10 @@ body {
   }
   /*Section About Operation*/
   .section-services {
+    padding: 6rem 3rem;
+  }
+  /*Section About Why-M&M*/
+  .section-items {
     padding: 6rem 3rem;
   }
   /*Section About Examples*/
