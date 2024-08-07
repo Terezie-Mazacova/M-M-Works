@@ -150,14 +150,18 @@ body {
             max-width: 34.688rem;
 
             .elektro-items {
-                display: flex;
-                align-items: center;
                 margin: 0 0 1.5rem 0;
-                gap: 0.25rem;
-                color: $text-tertiary;      
+                
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    color: $text-tertiary;
+                    gap: 0.25rem;
 
-                p {
-                    @include text-large;
+                    p {
+                        @include text-large;
+                        
+                    }
                 }
             }
 

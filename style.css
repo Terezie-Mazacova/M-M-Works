@@ -802,13 +802,15 @@ body {
   max-width: 34.688rem;
 }
 .elektro-bg .main-information .elektro-features .elektro-items {
-  display: flex;
-  align-items: center;
   margin: 0 0 1.5rem 0;
-  gap: 0.25rem;
-  color: rgb(107, 114, 128);
 }
-.elektro-bg .main-information .elektro-features .elektro-items p {
+.elektro-bg .main-information .elektro-features .elektro-items a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(107, 114, 128);
+  gap: 0.25rem;
+}
+.elektro-bg .main-information .elektro-features .elektro-items a p {
   font-size: 1.125rem;
   line-height: 1.625rem;
 }

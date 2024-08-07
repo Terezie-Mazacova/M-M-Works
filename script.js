@@ -11,33 +11,35 @@ document.addEventListener( 'DOMContentLoaded', function() {
         arrows: false
     });
     splide1.mount();
+} );
 
-    if (document.querySelector('.slider2')){
-        var splide2 = new Splide('.slider2', {
-            type: 'loop',
-            width: '100%',
-            perPage: 4,
-            gap: '10px',
-            autoplay: true,
-            perMove: 1,
-            interval: 2000,
-            speed: 900,
-            arrows: false,
-            pagination: true,
-            breakpoints: {
-                600: {
-                    perPage: 2,
-                    gap: '1rem',
-                },
-                480: {
-                    perPage: 1,
-                    gap: '1rem',
-                },
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide2 = new Splide('.slider2', {
+        type: 'loop',
+        width: '100%',
+        perPage: 4,
+        gap: '10px',
+        autoplay: true,
+        perMove: 1,
+        interval: 2000,
+        speed: 900,
+        arrows: false,
+        pagination: true,
+        breakpoints: {
+            600: {
+                perPage: 2,
+                gap: '1rem',
             },
-        });
-        splide2.mount();
-    }
+            480: {
+                perPage: 1,
+                gap: '1rem',
+            },
+        },
+    });
+    splide2.mount();
+} );
 
+document.addEventListener( 'DOMContentLoaded', function() {
     var splide3 = new Splide('.slider3', {
         perPage: 3,
         gap: '20px',
