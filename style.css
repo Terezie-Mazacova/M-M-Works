@@ -809,6 +809,13 @@ body {
   text-decoration: none;
   color: rgb(107, 114, 128);
   gap: 0.25rem;
+  transition: transform 0.3s ease;
+}
+.elektro-bg .main-information .elektro-features .elektro-items a:hover img {
+  transform: translateX(-5px);
+}
+.elektro-bg .main-information .elektro-features .elektro-items a img {
+  transition: transform 0.3s ease;
 }
 .elektro-bg .main-information .elektro-features .elektro-items a p {
   font-size: 1.125rem;
